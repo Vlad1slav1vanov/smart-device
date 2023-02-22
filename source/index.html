@@ -13,29 +13,48 @@
       <header class="header">
         <section class="header__logo-block logo-block">
           <a class="logo-block__link" href="index.html">
-            <h2 class="logo-block__company-name">
-              Smart Device
-            </h2>
-            <span class="logo-block__description">
-              умные технологии
-            </span>
+            <svg width="35" height="35" class="logo-block__logo logo-block__logo--mobile">
+              <use xlink:href="img/sprite.svg#main-logo-mobile"></use>
+            </svg>
+            <svg width="55" height="55" class="logo-block__logo logo-block__logo--tablet">
+              <use xlink:href="img/sprite.svg#main-logo"></use>
+            </svg>
+            <div class="logo-block__wrapper">
+              <h2 class="logo-block__company-name">
+                Smart Device
+              </h2>
+              <span class="logo-block__description">
+                умные технологии
+              </span>
+            </div>
           </a>
         </section>
+        
         <section class="header__contacts-block">
           <a 
           class="header__contact-link header__contact-link--email" 
           href="mailto:info@sd.ru"
           >
-            info@sd.ru
+            <svg width="20" height="20" class="header__link-icon">
+              <use xlink:href="img/sprite.svg#email-icon"></use>
+            </svg>
+            <span class="header__link-text">
+              info@sd.ru
+            </span>
           </a>
           <a 
           class="header__contact-link header__contact-link--phone" 
           href="tel:+74950005252"
           >
-            +7 (495) 000 52 52
+            <svg width="20" height="20" class="header__link-icon">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
+            <span class="header__link-text">
+              +7 (495) 000 52 52
+            </span>
           </a>
         </section>
-        <button class="header__open-popup">
+        <button class="header__open-popup-btn" type="button">
           Заказать звонок
         </button>
       </header>

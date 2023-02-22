@@ -1,0 +1,61 @@
+.logo-block {
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  @media (min-width: $vp-1024) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo-block__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.logo-block__company-name {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+    font-family: "Roboto Condensed", "Arial Narrow", "sans-serif";
+    color: $base-white-font;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+}
+
+.logo-block__description {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+    font-family: "Roboto", "Arial", "sans-serif";
+    color: $clipped-white;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.logo-block__logo--mobile {
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.logo-block__logo--tablet {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
+}
