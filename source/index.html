@@ -11,12 +11,306 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <section class="header__logo-block logo-block">
+          <a class="logo-block__link" href="index.html">
+            <h2 class="logo-block__company-name">
+              Smart Device
+            </h2>
+            <span class="logo-block__description">
+              умные технологии
+            </span>
+          </a>
+        </section>
+        <section class="header__contacts-block">
+          <a 
+          class="header__contact-link header__contact-link--email" 
+          href="mailto:info@sd.ru"
+          >
+            info@sd.ru
+          </a>
+          <a 
+          class="header__contact-link header__contact-link--phone" 
+          href="tel:+74950005252"
+          >
+            +7 (495) 000 52 52
+          </a>
+        </section>
+        <button class="header__open-popup">
+          Заказать звонок
+        </button>
       </header>
 
       <main class="main">
+
+        <section class="main__main-description main-description">
+          <h1 class="main-description__title">
+            Печатные платы
+          </h1>
+          <p class="main-description__description">
+            производство и монтаж, поставка комплектующих, блоков и модулей
+          </p>
+          <button class="main-description__button">
+            Получить бесплатную консультацию
+          </button>
+        </section>
+
+        <section class="main__benefits-block benefits-block">
+          <ul class="benfits-block__list">
+
+            <li class="benefits-block__item benefit-item">
+              <h2 class="benefit-item__title">
+                Оперативные сроки 
+              </h2>
+              <p class="benefit-item__description">
+                Усовершенствованная логистическая система позволяет нам просчитывать стоимость, 
+                производить и доставлять заказы плат и комплектующих в самые короткие сроки
+              </p>
+            </li>
+
+            <li class="benefits-block__item benefit-item">
+              <h2 class="benefit-item__title">
+                Крупные поставщики
+              </h2>
+              <p class="benefit-item__description">
+                Нашими поставщиками являются такие крупные мировые компании как: 
+                OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями 
+                обеспечивает хорошее качество нашей продукции.
+              </p>
+            </li>
+
+            <li class="benefits-block__item benefit-item">
+              <h2 class="benefit-item__title">
+                Полная конфиденциальность 
+              </h2>
+              <p class="benefit-item__description">
+                По желанию клиента  мы обеспечиваем полную конфиденциальность.
+              </p>
+            </li>
+
+            <li class="benefits-block__item benefit-item">
+              <h2 class="benefit-item__title">
+                Персонализация стоимости
+              </h2>
+              <p class="benefit-item__description">
+                Мы  подбираем определенную фабрику, поставщиков, вид доставки, 
+                чтобы установить ту цену, которая Вас устраивает.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-company">
+          <h2 class="about-company__title">О компании</h2>
+          <p class="about-company__description">
+            <span class="about-company__first-paragraph">
+              Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
+              Выполняем срочные заказы и пилотные образцы до 10 дней. 
+            </span>
+            <span class="about-company-second-paragraph">
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. 
+              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. 
+              Среди наших клиентов крупнейшие Производители светотехники России.
+            </span>
+          </p>
+          <button class="button-more" type="button">
+            Подробнее
+          </button>
+        </section>
+
+        <section class="main__products products">
+          <h2 class="products__title">
+            Smart Device предлагает следующие товары и услуги
+          </h2>
+          <ul class="products__list">
+            <li class="products__product-card product-card">
+              <h3 class="product-card__title">
+                Производство печатных
+                плат
+              </h3>
+              <a class="product-card__link" href="#">
+
+              </a>
+            </li>
+
+            <li class="products__product-card product-card">
+              <h3 class="product-card__title">
+                Монтаж печатных плат
+              </h3>
+              <a class="product-card__link" href="#">
+
+              </a>
+            </li>
+
+            <li class="products__product-card product-card">
+              <h3 class="product-card__title">
+                Комплектующие для светотехники
+              </h3>
+              <a class="product-card__link" href="#">
+
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__feedback-form feeedback-form">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" width="510" height="285">
+            <img class="feedback-form__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." width="510" height="285" />
+          </picture>
+          <div class="feedback-form__form-wrapper">
+            <h2 class="feedback-form__title">
+              Остались вопросы? Задайте их нам!
+            </h2>
+            <p class="feedback-form__description">
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <form class="feedback-form__form">
+              <div class="feedback-form__inputs-wrapper">
+                <label class="feedback-form__name-label">
+                  <input class="feedback-form__name-input" id="name-input" type="text" />
+                </label>
+                <label class="feedback-form__phone-label">
+                  <input class="feedback-form__phone-input" id="phone-input" type="phone" />
+                </label>
+              </div>
+              <label class="feedback-form__question-label">
+                <textarea class="feedback-form__question-textarea" id="question-textarea" type="text">
+
+                </textarea>
+              </label>
+              <div class="feedback-form__button-wrapper">
+                <button class="feedback-form__submit-button" type="submit">
+                  Задать вопрос
+                </button>
+                <label class="feedback-form__checkbox-label">
+                  <span class="feedback-form__checkbox-button"></span>
+                  <input class="feedback-form__access-checkbox" id="access-checkbox" type="checkbox" checked />
+                  <span class="feedback-form__checkbox-legend">
+                    Я согласен на обработку  персональных данных
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
+        <section class="footer__socials-section socials-section">
+          <div class="socials-section__logo-block logo-block">
+            <a class="logo-block__link" href="index.html">
+              <h2 class="logo-block__company-name">
+                Smart Device
+              </h2>
+              <span class="logo-block__description">
+                умные технологии
+              </span>
+            </a>
+          </div>
+          <div class="socials-section__social-links social-links">
+            <ul class="social-links__list">
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--ok">
+
+                </a>
+              </li>
+
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--vk">
+                  
+                </a>
+              </li>
+
+              <li class="social-links__item">
+                <a class="social-links__link social-links__link--pinterest">
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__nav-section nav-section">
+          <h2 class="nav-section__title">
+            Разделы сайта
+          </h2>
+          <nav class="nav-section__navigation">
+            <ul class="nav-section__list">
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  О Компании
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Продукты
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Производство печатных плат
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Монтаж печатных плат
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Комплектующие
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Доставка
+                </a>
+              </li>
+
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="footer__contacts-section contacts-section">
+          <h2 class="contacts-section__title">
+            Наш офис     
+          </h2>
+          <ul class="contacts-section__list">
+            <li class="contacts-section__item">
+              <a class="contacts-section__link" href="https://goo.gl/maps/kcRK9qafQSaS3DuT6">
+                г. Мытищи, Олимпийский проспект, д.10
+              </a>
+            </li>
+
+            <li class="contacts-section__item">
+              <a class="contacts-section__link" href="tel:+74955894050">
+                +7 (495) 589-40-50
+              </a>
+            </li>
+
+            <li class="contacts-section__item">
+              <a class="contacts-section__link" href="tel:+79253895829">
+                +7 (925) 389-58-29
+              </a>
+            </li>
+
+            <li class="contacts-section__item">
+              <a class="contacts-section__link" href="tel:+79253647813">
+                +7 (925) 364-78-13
+              </a>
+            </li>
+          </ul>
+        </section>
       </footer>
     </div>
 
