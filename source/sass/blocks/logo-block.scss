@@ -26,7 +26,7 @@
 
   @media (min-width: $vp-768) {
     display: block;
-    font-family: "Roboto Condensed", "Arial Narrow", "sans-serif";
+    font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
     color: $base-white-font;
     font-size: 25px;
     line-height: 29px;
@@ -39,7 +39,7 @@
 
   @media (min-width: $vp-768) {
     display: block;
-    font-family: "Roboto", "Arial", "sans-serif";
+    font-family: "Roboto", "Arial", sans-serif;
     color: $clipped-white;
     font-size: 12px;
     line-height: 14px;
