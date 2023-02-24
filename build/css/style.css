@@ -884,6 +884,56 @@ button,
   line-height: 19px;
 }
 
+.about-company {
+  padding: 0 25px 80px 25px;
+}
+
+.about-company__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.about-company__description {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.about-company__first-paragraph {
+  margin-bottom: 28px;
+}
+
+.about-company__first-paragraph,
+.about-company__second-paragraph,
+.about-company__third-paragraph {
+  display: block;
+}
+
+.about-company__third-paragraph {
+  display: none;
+}
+
+.about-company__image {
+  display: none;
+}
+
+.about-company__button-more {
+  width: 160px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: #00B2FF;
+  padding: 8px 15px;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1040,6 +1090,39 @@ button,
     font-size: 16px;
     line-height: 21px;
   }
+
+  .about-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    padding: 0 50px 80px 50px;
+  }
+
+  .about-company__title {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .about-company__description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .about-company__third-paragraph {
+    display: block;
+  }
+
+  .about-company__image {
+    display: block;
+    min-width: 150px;
+    height: 320px;
+  }
+
+  .about-company__button-more {
+    width: 180px;
+    padding: 14px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1114,6 +1197,18 @@ button,
 
   .benefit-item {
     min-height: 300px;
+  }
+
+  .about-company {
+    gap: 100px;
+    padding: 0;
+    width: 62.5%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .about-company__description {
+    min-height: 170px;
   }
 }
 
