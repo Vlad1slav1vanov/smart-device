@@ -1,0 +1,119 @@
+.product-card {
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+
+  &--1 {
+    background-image: url("../../img/card-1.jpg");
+  }
+
+  &--2 {
+    background-image: url("../../img/card-2.jpg");
+  }
+
+  &--3 {
+    background-image: url("../../img/card-3.jpg");
+  }
+
+  @media (min-width: 768px) {
+    &--1 {
+      background-image: url("../../img/card-1-tablet.jpg");
+    }
+  
+    &--2 {
+      background-image: url("../../img/card-2-tablet.jpg");
+    }
+  
+    &--3 {
+      background-image: url("../../img/card-3-tablet.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &--1 {
+      background-image: url("../../img/card-1-desktop.jpg");
+    }
+  
+    &--2 {
+      background-image: url("../../img/card-2-desktop.jpg");
+    }
+  
+    &--3 {
+      background-image: url("../../img/card-3-desktop.jpg");
+    }
+  }
+}
+
+.product-card__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 30px 90px 160px 30px;
+
+  @media (min-width: 768px) {
+    padding: 40px 395px 155px 45px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 22.8% 545px 11.4%;
+    height: 650px;
+  }
+}
+
+.product-card__button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: $base-blue;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 3px;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.product-card__chevron {
+  position: absolute;
+  top: 17.5px;
+  left: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      top: 26.5px;
+      left: 30px;
+    }
+  }
+}
+
+
+.product-card__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    width: 165px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+}
