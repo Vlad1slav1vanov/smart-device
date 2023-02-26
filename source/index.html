@@ -268,7 +268,7 @@
             <p class="feedback-form__description">
               Мы проконсультируем Вас бесплатно
             </p>
-            <form class="feedback-form__form">
+            <form class="feedback-form__form" method="post" action="#">
               <div class="feedback-form__inputs-wrapper">
                 <label class="feedback-form__name-label">
                   <input class="feedback-form__name-input" id="name-input" type="text" placeholder="Имя" />
@@ -444,7 +444,41 @@
           </section>
         </div>
       </footer>
-    </div>
+      
+      <div class="popup">
+        <div class="popup__wrapper">
+          <button class="popup__button-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="popup__title">
+            Закажите звонок
+          </h2>
+          <p class="popup__description">
+            Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+          </p>
+          <form class="popup__feedback-form feedback-form feedback-form--popup" method="post" action="#">
+            <label class="feedback-form__name-label">
+              <input class="feedback-form__name-input" id="name-input" type="text" placeholder="Имя" />
+            </label>
+            <label class="feedback-form__phone-label">
+              <input class="feedback-form__phone-input" id="phone-input" type="phone" placeholder="Телефон" />
+            </label>
+            <label class="feedback-form__question-label feedback-form__question-label--popup">
+              <textarea class="feedback-form__question-textarea" id="question-textarea" placeholder="Ваш вопрос"></textarea>
+            </label>
+            <button class="feedback-form__submit-button feedback-form__submit-button--popup" type="submit">
+              Отправить
+            </button>
+            <label class="feedback-form__checkbox-label">
+              <input class="feedback-form__access-checkbox visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked />
+              <span class="feedback-form__checkbox-button"></span>
+              <span class="feedback-form__checkbox-legend">
+                Я согласен на обработку  персональных данных
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
 
     <!-- Модалки -->
     <!-- <div class="modal modal--preload" data-modal="feedback">
