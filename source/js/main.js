@@ -1,7 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-
+import {accordionsToggle} from './modules/accordion.js';
+import { popupEvent } from './modules/popup';
+import { scrollToFormAddEvent } from './modules/form-scroll';
+import { addToggleDescriptionEvt } from './modules/open-more';
+import { phoneInputParent } from './modules/phone-input-valid';
+import { initPhoneInput } from './modules/form-validate/init-phone-input';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
+  accordionsToggle();
+  popupEvent();
+  scrollToFormAddEvent();
+  addToggleDescriptionEvt();
+  initPhoneInput(phoneInputParent)
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

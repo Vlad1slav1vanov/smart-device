@@ -64,6 +64,12 @@
   }
 }
 
+.nav-section__button-plus--is-open {
+  &::after {
+    display: none;
+  }
+}
+
 .nav-section__link {
   font-weight: 400;
   font-size: 14px;
@@ -83,6 +89,13 @@
   @media (min-width: 768px) {
     display: block;
     padding-top: 0;
+  }
+
+  &--is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
 

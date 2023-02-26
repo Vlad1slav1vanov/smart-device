@@ -191,6 +191,10 @@
                 Среди наших клиентов крупнейшие Производители светотехники России.
               </span>
             </p>
+            <p class="about-company__more-description">
+              Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
+            </p>
             <button class="about-company__button-more" type="button">
               Подробнее
             </button>
@@ -256,7 +260,7 @@
           </ul>
         </section>
 
-        <section class="main__feedback-form feedback-form">
+        <section class="main__feedback-form feedback-form" id="feedback-form">
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" width="26.5%" height="285">
             <img class="feedback-form__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." width="26.5%" height="285" />
@@ -273,8 +277,8 @@
                 <label class="feedback-form__name-label">
                   <input class="feedback-form__name-input" id="name-input" type="text" placeholder="Имя" />
                 </label>
-                <label class="feedback-form__phone-label">
-                  <input class="feedback-form__phone-input" id="phone-input" type="phone" placeholder="Телефон" />
+                <label class="feedback-form__phone-label" data-validate-type="phone">
+                  <input class="feedback-form__phone-input" id="phone-input" name="phone" type="phone" placeholder="Телефон" />
                 </label>
               </div>
               <label class="feedback-form__question-label">
@@ -479,35 +483,6 @@
           </form>
         </div>
       </div>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

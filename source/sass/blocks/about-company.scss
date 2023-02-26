@@ -62,6 +62,15 @@
   }
 }
 
+.about-company__more-description {
+  display: none;
+
+  &--is-open {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 .about-company__image {
   display: none;
 

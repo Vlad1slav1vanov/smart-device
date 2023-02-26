@@ -50,6 +50,12 @@
   }
 }
 
+.contacts-section__button-plus--is-open {
+  &::after {
+    display: none;
+  }
+}
+
 .contacts-section__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
@@ -82,6 +88,13 @@
   @media (min-width: 768px) {
     display: flex;
     padding-top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &--is-open {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
