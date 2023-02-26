@@ -256,10 +256,10 @@
           </ul>
         </section>
 
-        <section class="main__feedback-form feeedback-form">
+        <section class="main__feedback-form feedback-form">
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" width="510" height="285">
-            <img class="feedback-form__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." width="510" height="285" />
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" width="26.5%" height="285">
+            <img class="feedback-form__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." width="26.5%" height="285" />
           </picture>
           <div class="feedback-form__form-wrapper">
             <h2 class="feedback-form__title">
@@ -271,24 +271,22 @@
             <form class="feedback-form__form">
               <div class="feedback-form__inputs-wrapper">
                 <label class="feedback-form__name-label">
-                  <input class="feedback-form__name-input" id="name-input" type="text" />
+                  <input class="feedback-form__name-input" id="name-input" type="text" placeholder="Имя" />
                 </label>
                 <label class="feedback-form__phone-label">
-                  <input class="feedback-form__phone-input" id="phone-input" type="phone" />
+                  <input class="feedback-form__phone-input" id="phone-input" type="phone" placeholder="Телефон" />
                 </label>
               </div>
               <label class="feedback-form__question-label">
-                <textarea class="feedback-form__question-textarea" id="question-textarea" type="text">
-
-                </textarea>
+                <textarea class="feedback-form__question-textarea" id="question-textarea" placeholder="Ваш вопрос"></textarea>
               </label>
               <div class="feedback-form__button-wrapper">
                 <button class="feedback-form__submit-button" type="submit">
                   Задать вопрос
                 </button>
                 <label class="feedback-form__checkbox-label">
+                  <input class="feedback-form__access-checkbox visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked />
                   <span class="feedback-form__checkbox-button"></span>
-                  <input class="feedback-form__access-checkbox" id="access-checkbox" type="checkbox" checked />
                   <span class="feedback-form__checkbox-legend">
                     Я согласен на обработку  персональных данных
                   </span>

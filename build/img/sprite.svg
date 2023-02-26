@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="chevron-right" viewBox="0 0 5 10"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="checkbox" viewBox="0 0 9 5"><g fill="none">
+<path d="M0.978027 1.79058L3.75767 4.22868L7.92714 0.571533" stroke="white"/>
+</g></symbol><symbol id="chevron-right" viewBox="0 0 5 10"><g fill="none">
 <path d="M0.476196 8.80957L4.28572 5.00005L0.476196 1.19052" stroke="white" stroke-linejoin="round"/>
 </g></symbol><symbol id="email-icon" viewBox="0 0 20 20"><g fill="none">
 <path d="M17.5584 0H2.44568C1.09663 0 0 1.441 0 3.2137V16.7863C0 18.559 1.09663 20 2.44568 20H17.5543C18.9034 20 20 18.559 20 16.7863V3.21914C20.0041 1.44644 18.9075 0 17.5584 0ZM18.8868 16.7863C18.8868 17.7488 18.2909 18.5318 17.5584 18.5318H2.44568C1.71322 18.5318 1.11732 17.7488 1.11732 16.7863V3.21914C1.11732 2.25666 1.71322 1.47363 2.44568 1.47363H17.5543C18.2868 1.47363 18.8827 2.25666 18.8827 3.21914V16.7863H18.8868Z" fill="#00B2FF"/>

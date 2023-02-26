@@ -1030,6 +1030,191 @@ button,
   line-height: 30px;
 }
 
+.feedback-form {
+  position: relative;
+  background-color: #00B2FF;
+  padding: 50px 25px 90px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-form__inputs-wrapper {
+  width: 100%;
+}
+
+.feedback-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.feedback-form__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.feedback-form__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 40px;
+}
+
+.feedback-form__question-label {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.feedback-form__name-label,
+.feedback-form__phone-label {
+  width: 100%;
+}
+
+.feedback-form__name-input,
+.feedback-form__phone-input,
+.feedback-form__question-textarea {
+  width: 100%;
+  background-color: rgba(4, 20, 39, 0.15);
+  color: #F2F5F6;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.feedback-form__name-input,
+.feedback-form__phone-input {
+  margin-bottom: 20px;
+}
+
+.feedback-form__question-textarea {
+  padding: 25px 15px;
+  height: 180px;
+}
+
+.feedback-form__name-input::-webkit-input-placeholder,
+.feedback-form__phone-input::-webkit-input-placeholder,
+.feedback-form__question-textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form__name-input::-moz-placeholder,
+.feedback-form__phone-input::-moz-placeholder,
+.feedback-form__question-textarea::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form__name-input:-ms-input-placeholder,
+.feedback-form__phone-input:-ms-input-placeholder,
+.feedback-form__question-textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form__name-input::-ms-input-placeholder,
+.feedback-form__phone-input::-ms-input-placeholder,
+.feedback-form__question-textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form__name-input::placeholder,
+.feedback-form__phone-input::placeholder,
+.feedback-form__question-textarea::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.feedback-form__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-form__submit-button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #041827;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  width: 270px;
+  padding: 15px 25px;
+}
+
+.feedback-form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-form__access-checkbox:checked + .feedback-form__checkbox-button {
+  background-image: url("../../img/sprite/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback-form__checkbox-button {
+  display: block;
+  min-width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.feedback-form__checkbox-legend {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.feedback-form__image {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1270,6 +1455,64 @@ button,
     font-size: 20px;
     width: 165px;
   }
+
+  .feedback-form {
+    padding: 50px 50px 125px 50px;
+  }
+
+  .feedback-form__inputs-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+
+  .feedback-form__title {
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__description {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+
+  .feedback-form__question-label {
+    margin-bottom: 35px;
+  }
+
+  .feedback-form__question-textarea {
+    height: 155px;
+  }
+
+  .feedback-form__button-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 85px;
+  }
+
+  .feedback-form__submit-button {
+    margin: 0;
+    min-width: 265px;
+  }
+
+  .feedback-form__checkbox-label {
+    gap: 10px;
+  }
+
+  .feedback-form__checkbox-button {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1397,6 +1640,29 @@ button,
 
   .product-card__title {
     width: 100%;
+  }
+
+  .feedback-form {
+    padding-top: 170px;
+    padding-bottom: 195px;
+    padding-right: 18.75%;
+    padding-left: 50.7%;
+    background-image: url("../../img/bg-form.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+  }
+
+  .feedback-form__image {
+    position: absolute;
+    display: block;
+    top: 246px;
+    left: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback-form__image {
+    left: 18.2%;
   }
 }
 
