@@ -23,26 +23,34 @@
 
 .logo-block__company-name {
   display: none;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  color: $base-white-font;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+
+  &--footer {
+    display: block;
+  }
 
   @media (min-width: $vp-768) {
     display: block;
-    font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-    color: $base-white-font;
-    font-size: 25px;
-    line-height: 29px;
-    font-weight: 700;
   }
 }
 
 .logo-block__description {
   display: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $clipped-white;
+  font-size: 12px;
+  line-height: 14px;
+
+  &--footer {
+    display: block;
+  }
 
   @media (min-width: $vp-768) {
     display: block;
-    font-family: "Roboto", "Arial", sans-serif;
-    color: $clipped-white;
-    font-size: 12px;
-    line-height: 14px;
   }
 }
 
@@ -58,4 +66,27 @@
   @media (min-width: $vp-768) {
     display: block;
   }
+}
+
+.logo-block__logo--footer {
+  display: block;
+}
+
+.logo-block--footer {
+  width: 215px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
 }

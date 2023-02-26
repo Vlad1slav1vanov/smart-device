@@ -1,0 +1,21 @@
+.footer {
+  background-color: $base-black-font;
+  padding-bottom: 35px;
+
+  @media (min-width: 768px) {
+    padding: 50px 50px 65px 50px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 18.2% 55px 18.2%;
+    display: flex;
+  }
+}
+
+.footer__links-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
