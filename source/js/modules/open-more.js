@@ -5,7 +5,7 @@ const toggleDescription = () => {
   openMoreButton.classList.toggle("about-company__button-more--is-open");
   moreDescriptionBlock.classList.toggle("about-company__more-description--is-open");
 
-  openMoreButton.textContent === "Подробнее" 
+  openMoreButton.classList.contains("about-company__button-more--is-open")
   ? openMoreButton.textContent = "Свернуть"
   : openMoreButton.textContent = "Подробнее"
 }
