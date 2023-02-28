@@ -1,46 +1,49 @@
 .about-company {
-  padding: 0 25px 80px 25px;
+  gap: 100px;
+  padding: 0;
+  width: 62.5%;
+  margin: 0 auto;
+  margin-bottom: 100px;
 
-  @media (min-width: $vp-768) {
+  @media (max-width: 1023px) {
     display: flex;
     gap: 30px;
     padding: 0 50px 80px 50px;
+    width: 100%;
   }
 
-  @media (min-width: $vp-1024) {
-    gap: 100px;
-    padding: 0;
-    width: 62.5%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+  @media (max-width: 767px) {
+    display: block;
+    padding: 0 25px 80px 25px;
+    margin-bottom: 0;
   }
 }
 
 .about-company__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
-  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 51px;
 
-  @media (min-width: $vp-768) {
-    font-size: 36px;
-    line-height: 51px;
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 15px;
   }
 }
 
 .about-company__description {
-  font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 20px;
+  min-height: 170px;
 
-  @media (min-width: $vp-768) {
+  @media (max-width: 1023px) {
     font-size: 16px;
     line-height: 21px;
   }
 
-  @media (min-width: $vp-1024) {
-    min-height: 170px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
   }
 }
 
@@ -55,10 +58,10 @@
 }
 
 .about-company__third-paragraph {
-  display: none;
+  display: block;
 
-  @media (min-width: $vp-768) {
-    display: block;
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -66,36 +69,38 @@
   display: none;
 
   &--is-open {
+    font-size: 14px;
+    line-height: 19px;
     display: block;
     margin-bottom: 20px;
   }
 }
 
 .about-company__image {
-  display: none;
+  display: block;
+  min-width: 150px;
+  height: 320px;
 
-  @media (min-width: $vp-768) {
-    display: block;
-    min-width: 150px;
-    height: 320px;
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
 .about-company__button-more {
-  width: 160px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  background-color: inherit;
-  color: $base-blue;
-  padding: 8px 15px;
-  border: 1px solid $base-blue;
-  border-radius: 3px;
+  width: 180px;
+  padding: 14px;
 
-  @media (min-width: $vp-768) {
-    width: 180px;
-    padding: 14px;
+  @media (max-width: 767px) {
+    width: 160px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: $base-blue;
+    padding: 8px 15px;
+    border: 1px solid $base-blue;
+    border-radius: 3px;
   }
 }
