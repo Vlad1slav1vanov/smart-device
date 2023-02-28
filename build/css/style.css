@@ -913,6 +913,9 @@ button,
 }
 
 .about-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 100px;
   padding: 0;
   width: 62.5%;
@@ -929,6 +932,7 @@ button,
 
 .about-company__description {
   min-height: 170px;
+  margin-bottom: 20px;
 }
 
 .about-company__first-paragraph {
@@ -947,13 +951,13 @@ button,
 
 .about-company__more-description {
   display: none;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px;
 }
 
 .about-company__more-description--is-open {
-  font-size: 14px;
-  line-height: 19px;
   display: block;
-  margin-bottom: 20px;
 }
 
 .about-company__image {
@@ -965,6 +969,15 @@ button,
 .about-company__button-more {
   width: 180px;
   padding: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: #00B2FF;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
 }
 
 .products {
@@ -2128,12 +2141,10 @@ button,
   }
 
   .about-company {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 30px;
     padding: 0 50px 80px 50px;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .about-company__description {
@@ -2162,11 +2173,16 @@ button,
   .about-company__description {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 20px;
   }
 
   .about-company__third-paragraph {
     display: none;
+  }
+
+  .about-company__more-description {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
   }
 
   .about-company__image {
@@ -2175,15 +2191,6 @@ button,
 
   .about-company__button-more {
     width: 160px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    background-color: inherit;
-    color: #00B2FF;
     padding: 8px 15px;
-    border: 1px solid #00B2FF;
-    border-radius: 3px;
   }
 }
