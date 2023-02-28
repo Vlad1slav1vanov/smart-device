@@ -54,22 +54,21 @@
   }
 }
 
-.logo-block__logo--mobile {
-  @media (min-width: $vp-768) {
-    display: none;
-  }
-}
+.logo-block__logo {
+  width: 55px;
+  height: 55px;
 
-.logo-block__logo--tablet {
-  display: none;
-
-  @media (min-width: $vp-768) {
-    display: block;
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 35px;
   }
 }
 
 .logo-block__logo--footer {
-  display: block;
+  @media (max-width: 767px) {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .logo-block--footer {

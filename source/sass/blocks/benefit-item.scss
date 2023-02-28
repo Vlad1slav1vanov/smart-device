@@ -15,34 +15,17 @@
   }
 
   &:hover {
-    & > .benefit-item__title {
-      color: $base-white-font;
-    }
     background-color: $base-blue;
-    color: $base-white-font;
     border-color: $base-blue;
+    color: #fff;
 
-    & > .benefit-item__icon {
-      display: none;
+    & h2 {
+      color: #fff
     }
+  }
 
-    & > .benefit-item__icon--hover {
-      display: block;
-    }
-
-    @media (min-width: $vp-768) {
-      & > .benefit-item__icon {
-        display: none;
-      }
-
-      & > .benefit-item__icon--tablet {
-        display: none;
-      }
-
-      & > .benefit-item__icon--tablet-hover {
-        display: block;
-      }
-    }
+  &:hover svg g {
+    fill: #fff;
   }
 
   @media (min-width: $vp-768) {
@@ -58,17 +41,12 @@
 }
 
 .benefit-item__icon {
-  display: block;
+  width: 35px;
+  height: 35px;
 
-  &--hover, &--tablet, &--tablet-hover {
-    display: none;
-  }
-
-  @media (min-width: $vp-768) {
-    display: none;
-    &--tablet {
-      display: block;
-    }
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
   }
 }
 
