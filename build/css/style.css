@@ -2114,6 +2114,7 @@ button,
   .feedback-form__image {
     position: absolute;
     display: block;
+    width: 26.5%;
     top: 246px;
     left: 10%;
   }
