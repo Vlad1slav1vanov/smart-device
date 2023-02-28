@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -395,6 +397,15 @@ template {
 
 @font-face {
   font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-700.woff") format("woff");
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
@@ -766,50 +777,46 @@ button,
   width: 100%;
   background-color: #000;
   background-image: url("../../img/main-block-background.jpg");
-  background-position: -254px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 25px 190px 25px;
+  padding: 305px 37.8% 280px 24.7%;
+  background-position: center;
 }
 
 .main-description__title {
   margin: 0;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 42px;
   font-weight: 700;
   color: #F2F5F6;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+  width: 800px;
+  font-size: 80px;
+  line-height: 94px;
 }
 
 .main-description__description {
+  font-size: 22px;
+  line-height: 34px;
   margin-bottom: 50px;
-  font-size: 14px;
-  line-height: 22px;
   color: #F2F5F6;
 }
 
 .main-description__button {
-  padding: 10px 0;
-  width: 270px;
+  padding: 15px 0;
+  width: 420px;
   background-color: #00B2FF;
+}
+
+.main-description__button::after {
+  content: "Получить беслпатную консультацию";
   color: #F2F5F6;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
   text-transform: uppercase;
-  border-radius: 3px;
-}
-
-.main-description__button-text--mobile {
-  display: block;
-}
-
-.main-description__button-text--tablet {
-  display: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .benefits-block {
@@ -970,21 +977,20 @@ button,
 
 .products {
   background-color: #041827;
-  padding: 50px 25px 86px 25px;
+  padding: 70px 0px 140px 0px;
 }
 
 .products__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 30px;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 6.97%;
+  width: 62.5%;
+  margin: 0 auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -992,15 +998,17 @@ button,
 
 .products__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
   color: #ffffff;
-  margin-bottom: 40px;
+  font-weight: 400;
+  width: 62.5%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 50px;
 }
 
-.products__title--tablet {
-  display: none;
+.products__title::after {
+  content: "Smart Device предлагает следующие товары и услуги";
 }
 
 .product-card {
@@ -1624,37 +1632,6 @@ button,
     margin-right: 43.5%;
   }
 
-  .main-description {
-    padding: 180px 50px 205px 50px;
-    background-position: -173px;
-  }
-
-  .main-description__title {
-    font-size: 64px;
-    line-height: 75px;
-  }
-
-  .main-description__description {
-    font-size: 22px;
-    line-height: 34px;
-  }
-
-  .main-description__button {
-    margin-left: 45px;
-    padding: 15px 0;
-    width: 410px;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .main-description__button-text--mobile {
-    display: none;
-  }
-
-  .main-description__button-text--tablet {
-    display: block;
-  }
-
   .benefits-block {
     padding: 80px 50px;
   }
@@ -1683,21 +1660,6 @@ button,
   .benefit-item__description {
     font-size: 16px;
     line-height: 21px;
-  }
-
-  .products {
-    padding: 60px 55px 75px 55px;
-  }
-
-  .products__title {
-    font-size: 36px;
-    line-height: 50px;
-    margin-bottom: 50px;
-    display: none;
-  }
-
-  .products__title--tablet {
-    display: block;
   }
 
   .product-card--1 {
@@ -1950,21 +1912,6 @@ button,
     border-radius: 3px;
   }
 
-  .main-description {
-    padding: 305px 37.8% 280px 24.7%;
-    background-position: center;
-  }
-
-  .main-description__title {
-    width: 800px;
-    font-size: 80px;
-    line-height: 94px;
-  }
-
-  .main-description__button {
-    margin-left: 0;
-  }
-
   .benefits-block {
     padding: 120px 0;
   }
@@ -1976,26 +1923,6 @@ button,
 
   .benefit-item {
     min-height: 300px;
-  }
-
-  .products {
-    padding: 70px 0px 140px 0px;
-  }
-
-  .products__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    gap: 6.97%;
-    width: 62.5%;
-    margin: 0 auto;
-  }
-
-  .products__title {
-    width: 62.5%;
-    margin: 0 auto;
-    margin-bottom: 50px;
   }
 
   .product-card--1 {
@@ -2100,6 +2027,21 @@ button,
     padding: 0 24px;
   }
 
+  .main-description {
+    padding: 180px 50px 205px 50px;
+    background-position: -173px;
+  }
+
+  .main-description__title {
+    font-size: 64px;
+    line-height: 75px;
+    width: auto;
+  }
+
+  .main-description__button {
+    margin-left: 45px;
+  }
+
   .about-company {
     gap: 30px;
     padding: 0 50px 80px 50px;
@@ -2110,6 +2052,32 @@ button,
   .about-company__description {
     font-size: 16px;
     line-height: 21px;
+  }
+
+  .products {
+    padding: 60px 55px 75px 55px;
+  }
+
+  .products__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+  }
+
+  .products__title {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .products__title::after {
+    width: 100%;
   }
 }
 
@@ -2126,6 +2094,35 @@ button,
   .logo-block__logo--footer {
     width: 55px;
     height: 55px;
+  }
+
+  .main-description {
+    background-position: -254px;
+    padding: 150px 25px 190px 25px;
+  }
+
+  .main-description__title {
+    font-size: 36px;
+    line-height: 42px;
+    width: auto;
+  }
+
+  .main-description__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-description__button {
+    padding: 10px 0;
+    width: 270px;
+    border-radius: 3px;
+    margin-left: 0;
+  }
+
+  .main-description__button::after {
+    content: "Беслпатная консультация";
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .benefit-item__icon {
@@ -2167,5 +2164,20 @@ button,
   .about-company__button-more {
     width: 160px;
     padding: 8px 15px;
+  }
+
+  .products {
+    padding: 50px 25px 86px 25px;
+  }
+
+  .products__title {
+    margin-bottom: 40px;
+    width: auto;
+  }
+
+  .products__title::after {
+    content: "Товары и услуги Smart Device";
+    font-size: 28px;
+    line-height: 40px;
   }
 }

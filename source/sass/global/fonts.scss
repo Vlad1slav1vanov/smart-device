@@ -19,6 +19,15 @@
 
 @font-face {
   font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-700.woff") format("woff");
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;

@@ -1,57 +1,63 @@
 .products {
   background-color: $base-black-font;
-  padding: 50px 25px 86px 25px;
+  padding: 70px 0px 140px 0px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     padding: 60px 55px 75px 55px;
   }
 
-  @media (min-width: 1024px) {
-    padding: 70px 0px 140px 0px;
+  @media (max-width: 767px) {
+    padding: 50px 25px 86px 25px;
   }
 }
 
 .products__list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  flex-direction: row;
+  gap: 6.97%;
+  width: 62.5%;
+  margin: 0 auto;
   justify-content: space-between;
 
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    gap: 6.97%;
-    width: 62.5%;
-    margin: 0 auto;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: auto;
   }
 }
 
 .products__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
   color: $color-default-white;
-  margin-bottom: 40px;
+  font-weight: 400;
+  width: 62.5%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 50px;
 
-  @media (min-width: $vp-768) {
-    font-size: 36px;
-    line-height: 50px;
-    margin-bottom: 50px;
-    display: none;
+  &::after {
+    content: "Smart Device предлагает следующие товары и услуги";
   }
 
-  @media (min-width: 1024px) {
-    width: 62.5%;
-    margin: 0 auto;
+  @media (max-width: 1023px) {
+    margin: 0;
+    width: 100%;
     margin-bottom: 50px;
+    &::after {
+      width: 100%;
+    }
   }
-}
 
-.products__title--tablet {
-  display: none;
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    width: auto;
 
-  @media (min-width: 768px) {
-    display: block;
+    &::after {
+      content: "Товары и услуги Smart Device";
+      font-size: 28px;
+      line-height: 40px;
+    }
   }
 }

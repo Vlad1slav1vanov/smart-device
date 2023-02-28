@@ -2,19 +2,19 @@
   width: 100%;
   background-color: #000;
   background-image: url('../../img/main-block-background.jpg');
-  background-position: -254px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 25px 190px 25px;
+  padding: 305px 37.8% 280px 24.7%;
+  background-position: center;
 
-  @media (min-width: $vp-768) {
+  @media (max-width: 1023px) {
     padding: 180px 50px 205px 50px;
     background-position: -173px;
   }
 
-  @media (min-width: $vp-1024) {
-    padding: 305px 37.8% 280px 24.7%;
-    background-position: center;
+  @media (max-width: 767px) {
+    background-position: -254px;
+    padding: 150px 25px 190px 25px;
   }
 }
 
@@ -22,74 +22,68 @@
   margin: 0;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 42px;
   font-weight: 700;
   color: $base-white-font;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+  width: 800px;
+  font-size: 80px;
+  line-height: 94px;
 
-  @media (min-width: $vp-768) {
+  @media (max-width: 1023px) {
     font-size: 64px;
     line-height: 75px;
+    width: auto;
   }
 
-  @media (min-width: $vp-1024) {
-    width: 800px;
-    font-size: 80px;
-    line-height: 94px;
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+    width: auto;
   }
 }
 
 .main-description__description {
+  font-size: 22px;
+  line-height: 34px;
   margin-bottom: 50px;
-  font-size: 14px;
-  line-height: 22px;
   color: $base-white-font;
 
-  @media (min-width: $vp-768) {
-    font-size: 22px;
-    line-height: 34px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
 .main-description__button {
-  padding: 10px 0;
-  width: 270px;
+  padding: 15px 0;
+  width: 420px;
   background-color: $base-blue;
-  color: $base-white-font;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  border-radius: 3px;
 
-  @media (min-width: $vp-768) {
-    margin-left: 45px;
-    padding: 15px 0;
-    width: 410px;
+  &::after {
+    content: "Получить беслпатную консультацию";
+    color: $base-white-font;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 18px;
     line-height: 21px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (max-width: 1023px) {
+    margin-left: 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px 0;
+    width: 270px;
+    border-radius: 3px;
     margin-left: 0;
-  }
-}
 
-.main-description__button-text--mobile {
-  display: block;
-
-  @media (min-width: $vp-768) {
-    display: none;
-  }
-}
-
-.main-description__button-text--tablet {
-  display: none;
-
-  @media (min-width: $vp-768) {
-    display: block;
+    &::after {
+      content: "Беслпатная консультация";
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
