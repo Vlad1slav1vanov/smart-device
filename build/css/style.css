@@ -1459,7 +1459,7 @@ button,
   gap: 10px;
 }
 
-.socials-section {
+.socials-wrapper {
   padding: 35px 50px 25px 50px;
 }
 
@@ -1901,7 +1901,7 @@ button,
     gap: 10px;
   }
 
-  .socials-section {
+  .socials-wrapper {
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2081,7 +2081,7 @@ button,
     margin-right: 30px;
   }
 
-  .socials-section {
+  .socials-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
