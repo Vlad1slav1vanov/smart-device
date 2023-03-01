@@ -37,27 +37,16 @@
   font-size: 36px;
   line-height: 50px;
 
-  &::after {
-    content: "Smart Device предлагает следующие товары и услуги";
-  }
-
   @media (max-width: 1023px) {
     margin: 0;
     width: 100%;
     margin-bottom: 50px;
-    &::after {
-      width: 100%;
-    }
   }
 
   @media (max-width: 767px) {
     margin-bottom: 40px;
     width: auto;
-
-    &::after {
-      content: "Товары и услуги Smart Device";
-      font-size: 28px;
-      line-height: 40px;
-    }
+    font-size: 28px;
+    line-height: 40px;
   }
 }

@@ -59,16 +59,12 @@
   padding: 15px 0;
   width: 420px;
   background-color: $base-blue;
-
-  &::after {
-    content: "Получить беслпатную консультацию";
-    color: $base-white-font;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-  }
+  color: $base-white-font;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 
   @media (max-width: 1023px) {
     margin-left: 45px;
@@ -79,11 +75,7 @@
     width: 270px;
     border-radius: 3px;
     margin-left: 0;
-
-    &::after {
-      content: "Беслпатная консультация";
-      font-size: 14px;
-      line-height: 16px;
-    }
+    font-size: 14px;
+    line-height: 16px;
   }
 }

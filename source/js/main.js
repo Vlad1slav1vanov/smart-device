@@ -7,6 +7,7 @@ import { scrollToFormAddEvent } from './modules/form-scroll';
 import { addToggleDescriptionEvt } from './modules/open-more';
 import { phoneInputParent } from './modules/phone-input-valid';
 import { initPhoneInput } from './modules/form-validate/init-phone-input';
+import { addChangeTextEvt } from './modules/change-content';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
   popupEvent();
   scrollToFormAddEvent();
   addToggleDescriptionEvt();
-  initPhoneInput(phoneInputParent)
+  initPhoneInput(phoneInputParent);
+  addChangeTextEvt();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
