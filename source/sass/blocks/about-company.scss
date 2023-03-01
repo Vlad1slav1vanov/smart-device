@@ -6,6 +6,34 @@
   margin: 0 auto;
   margin-bottom: 100px;
 
+  & h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 15px;
+  }
+
+  & p {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  & button {
+    width: 180px;
+    padding: 14px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: $base-blue;
+    border: 1px solid $base-blue;
+    border-radius: 3px;
+  }
+
   @media (max-width: 1023px) {
     gap: 30px;
     padding: 0 50px 80px 50px;
@@ -17,45 +45,22 @@
     display: block;
     padding: 0 25px 80px 25px;
     margin-bottom: 0;
+
+    & h2 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    & button {
+      width: 160px;
+      padding: 8px 15px;
+    }
   }
-}
-
-.about-company__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-
-  @media (max-width: 767px) {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 15px;
-  }
-}
-
-.about-company__description {
-  min-height: 170px;
-  margin-bottom: 20px;
-
-  @media (max-width: 1023px) {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
-.about-company__first-paragraph {
-  margin-bottom: 28px;
-}
-
-.about-company__first-paragraph, 
-.about-company__second-paragraph,
-.about-company__third-paragraph {
-  display: block;
 }
 
 .about-company__third-paragraph {
@@ -68,15 +73,6 @@
 
 .about-company__more-description {
   display: none;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 20px;
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-    line-height: 19px;
-    margin-bottom: 20px;
-  }
 
   &--is-open {
     display: block;
@@ -90,24 +86,5 @@
 
   @media (max-width: 767px) {
     display: none;
-  }
-}
-
-.about-company__button-more {
-  width: 180px;
-  padding: 14px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  background-color: inherit;
-  color: $base-blue;
-  border: 1px solid $base-blue;
-  border-radius: 3px;
-
-  @media (max-width: 767px) {
-    width: 160px;
-    padding: 8px 15px;
   }
 }

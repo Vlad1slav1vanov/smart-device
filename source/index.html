@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart device</title>
-    <link rel="preload" href="fonts/pt-mono.woff" as="font" type="font/woff">
-    <link rel="preload" href="fonts/pt-mono.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/roboto-condensed.woff" as="font" type="font/woff">
-    <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/roboto-condensed-700.woff" as="font" type="font/woff">
-    <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/roboto.woff" as="font" type="font/woff">
-    <link rel="preload" href="fonts/roboto.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -58,10 +54,10 @@
       </header>
       <main class="main">
         <section class="main__main-description main-description">
-          <h1 class="main-description__title">
+          <h1>
             Печатные платы
           </h1>
-          <p class="main-description__description">
+          <p>
             производство и монтаж, поставка комплектующих, блоков и модулей
           </p>
           <button class="main-description__button">
@@ -74,10 +70,10 @@
               <svg class="benefit-item__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#watches-icon"></use>
               </svg>
-              <h2 class="benefit-item__title">
+              <h2>
                 Оперативные сроки 
               </h2>
-              <p class="benefit-item__description">
+              <p>
                 Усовершенствованная логистическая система позволяет нам просчитывать стоимость, 
                 производить и доставлять заказы плат и комплектующих в самые короткие сроки
               </p>
@@ -86,10 +82,10 @@
               <svg class="benefit-item__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#providers-icon"></use>
               </svg>
-              <h2 class="benefit-item__title">
+              <h2>
                 Крупные поставщики
               </h2>
-              <p class="benefit-item__description">
+              <p>
                 Нашими поставщиками являются такие крупные мировые компании как: 
                 OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями 
                 обеспечивает хорошее качество нашей продукции.
@@ -99,10 +95,10 @@
               <svg class="benefit-item__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#incognito-icon"></use>
               </svg>
-              <h2 class="benefit-item__title">
+              <h2>
                 Полная конфиденциальность 
               </h2>
-              <p class="benefit-item__description">
+              <p>
                 По желанию клиента  мы обеспечиваем полную конфиденциальность.
               </p>
             </li>
@@ -110,10 +106,10 @@
               <svg class="benefit-item__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#price-icon"></use>
               </svg>
-              <h2 class="benefit-item__title">
+              <h2>
                 Персонализация стоимости
               </h2>
-              <p class="benefit-item__description">
+              <p>
                 Мы  подбираем определенную фабрику, поставщиков, вид доставки, 
                 чтобы установить ту цену, которая Вас устраивает.
               </p>
@@ -126,19 +122,15 @@
             <img class="about-company__image" src="img/2022.png" srcset="img/2022@2x.png 2x" alt="2022." width="150" height="320">
           </picture>
           <div class="about-company__wrapper">
-            <h2 class="about-company__title">О компании</h2>
-            <p class="about-company__description">
-              <span class="about-company__first-paragraph">
-                Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
-                Выполняем срочные заказы и пилотные образцы до 10 дней. 
-              </span>
-              <span class="about-company__second-paragraph">
-                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              </span>
-              <span class="about-company__third-paragraph">
-                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. 
-                Среди наших клиентов крупнейшие Производители светотехники России.
-              </span>
+            <h2>О компании</h2>
+            <p>
+              Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
+              Выполняем срочные заказы и пилотные образцы до 10 дней. 
+            </p>
+            <p class="about-company__providers-description">
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. 
+              Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
             <p class="about-company__more-description">
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
@@ -193,38 +185,41 @@
             </li>
           </ul>
         </section>
-        <section class="main__feedback-form feedback-form">
+        <section class="main__feedback-form-section feedback-form-section" id="feedback-form">
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" height="285">
-            <img class="feedback-form__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." height="285">
+            <img class="feedback-form-section__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." height="285">
           </picture>
-          <div class="feedback-form__form-wrapper">
-            <h2 class="feedback-form__title">
+          <div class="feedback-form-section__form-wrapper">
+            <h2>
               Остались вопросы? Задайте их нам!
             </h2>
-            <p class="feedback-form__description">
+            <p>
               Мы проконсультируем Вас бесплатно
             </p>
-            <form class="feedback-form__form" method="post" action="#">
-              <label class="feedback-form__name-label">
-                <input class="feedback-form__name-input" id="name-input" type="text" placeholder="Имя">
-              </label>
-              <label class="feedback-form__phone-label" data-validate-type="phone">
-                <input class="feedback-form__phone-input" id="phone-input" name="phone" type="tel" placeholder="Телефон">
-              </label>
-              <label class="feedback-form__question-label">
-                <textarea class="feedback-form__question-textarea" id="question-textarea" placeholder="Ваш вопрос"></textarea>
-              </label>
-              <button class="feedback-form__submit-button" type="submit">
+            <form class="feedback-form-section__feedback-form feedback-form" method="post" action="#">
+              <div class="feedback-form__name-wrapper">
+                <label class="visually-hidden" for="name-input" >Имя</label>
+                <input id="name-input" type="text" placeholder="Имя">
+              </div>
+              <div class="feedback-form__phone-wrapper">
+                <label class="visually-hidden" for="phone-input" data-validate-type="phone">Телефон</label>
+                <input id="phone-input" name="phone" type="tel" placeholder="Телефон">
+              </div>
+              <div class="feedback-form__question-wrapper">
+                <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
+                <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <button type="submit">
                 Задать вопрос
               </button>
-              <label class="feedback-form__checkbox-label">
-                <input class="feedback-form__access-checkbox visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
-                <span class="feedback-form__checkbox-button"></span>
-                <span class="feedback-form__checkbox-legend">
+              <div class="feedback-form__checkbox-wrapper">
+                <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
+                <span></span>
+                <label for="access-checkbox">
                   Я согласен на обработку  персональных данных
-                </span>
-              </label>
+                </label>
+              </div>
             </form>
           </div>
         </section>
@@ -365,33 +360,38 @@
           <button class="popup__button-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
-          <h2 class="popup__title">
-            Закажите звонок
-          </h2>
-          <p class="popup__description">
-            Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-          </p>
-          <form class="popup__feedback-form feedback-form feedback-form--popup" method="post" action="#">
-            <label class="feedback-form__name-label">
-              <input class="feedback-form__name-input" id="popup-name-input" type="text" placeholder="Имя">
-            </label>
-            <label class="feedback-form__phone-label">
-              <input class="feedback-form__phone-input" id="popup-phone-input" type="tel" placeholder="Телефон">
-            </label>
-            <label class="feedback-form__question-label feedback-form__question-label--popup">
-              <textarea class="feedback-form__question-textarea" id="popup-question-textarea" placeholder="Ваш вопрос"></textarea>
-            </label>
-            <button class="feedback-form__submit-button feedback-form__submit-button--popup" type="submit">
-              Отправить
-            </button>
-            <label class="feedback-form__checkbox-label">
-              <input class="feedback-form__access-checkbox visually-hidden" id="popup-access-checkbox" name="access" value="true" type="checkbox" checked>
-              <span class="feedback-form__checkbox-button"></span>
-              <span class="feedback-form__checkbox-legend">
-                Я согласен на обработку  персональных данных
-              </span>
-            </label>
-          </form>
+          <div class="popup__form-wrapper">
+            <h2>
+              Остались вопросы? Задайте их нам!
+            </h2>
+            <p>
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <form class="popup__feedback-form feedback-form" method="post" action="#">
+              <div class="feedback-form__name-wrapper">
+                <label class="visually-hidden" for="name-input" >Имя</label>
+                <input id="name-input" type="text" placeholder="Имя">
+              </div>
+              <div class="feedback-form__phone-wrapper">
+                <label class="visually-hidden" for="phone-input" data-validate-type="phone">Телефон</label>
+                <input id="phone-input" name="phone" type="tel" placeholder="Телефон">
+              </div>
+              <div class="feedback-form__question-wrapper">
+                <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
+                <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <button type="submit">
+                Задать вопрос
+              </button>
+              <div class="feedback-form__checkbox-wrapper">
+                <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
+                <span></span>
+                <label for="access-checkbox">
+                  Я согласен на обработку  персональных данных
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

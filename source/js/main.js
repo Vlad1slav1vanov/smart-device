@@ -22,10 +22,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   accordionsToggle();
   popupEvent();
-  scrollToFormAddEvent();
   addToggleDescriptionEvt();
   initPhoneInput(phoneInputParent);
   addChangeTextEvt();
+  scrollToFormAddEvent();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
