@@ -14,7 +14,7 @@ const changeText = () => {
   } else if (tabletScreen.matches || desktopScreen.matches) {
     consultButton.textContent = "Получить беслпатную консультацию";
     productsTitle.textContent = "Smart Device предлагает следующие товары и услуги";
-    providersDescription.textContent = "Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России."   
+    providersDescription.textContent = "Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России."
   }
 }
 
@@ -25,5 +25,3 @@ const addChangeTextEvt = () => {
 }
 
 export {addChangeTextEvt};
-
-

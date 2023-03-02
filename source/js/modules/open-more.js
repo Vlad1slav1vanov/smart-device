@@ -15,4 +15,3 @@ const addToggleDescriptionEvt = () => {
 }
 
 export {addToggleDescriptionEvt};
-
