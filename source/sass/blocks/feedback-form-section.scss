@@ -3,8 +3,6 @@
   background-color: $base-blue;
   padding-top: 170px;
   padding-bottom: 195px;
-  padding-right: 18%;
-  padding-left: 50.7%;
   background-image: url("../../img/bg-form.png");
   background-repeat: no-repeat;
   background-size: 50% 100%;
@@ -56,6 +54,24 @@
   }
 }
 
+.feedback-form-section__wrapper {
+  position: relative;
+  width: 62.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6%;
+
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    display: block;
+  }
+}
+
 .feedback-form-section__form-wrapper {
   width: 580px;
 
@@ -65,13 +81,9 @@
 }
 
 .feedback-form-section__image {
-  display: none;
+  display: block;
 
-  @media (min-width: 1024px) {
-    position: absolute;
-    display: block;
-    width: 26.5%;
-    top: 246px;
-    left: 10%;
+  @media (max-width: 1023px) {
+    display: none;
   }
 }

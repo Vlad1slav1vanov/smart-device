@@ -14,55 +14,59 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <section class="header__logo-block logo-block">
-          <a class="logo-block__link" href="index.html">
-            <svg width="35" height="35" class="logo-block__logo">
-              <use xlink:href="img/sprite.svg#main-logo"></use>
-            </svg>
-            <div class="logo-block__wrapper">
-              <h2 class="logo-block__company-name">
-                Smart Device
-              </h2>
-              <span class="logo-block__description">
-                умные технологии
+        <div class="header__wrapper">
+          <section class="header__logo-block logo-block">
+            <a class="logo-block__link" href="index.html">
+              <svg width="35" height="35" class="logo-block__logo">
+                <use xlink:href="img/sprite.svg#main-logo"></use>
+              </svg>
+              <div class="logo-block__wrapper">
+                <h2 class="logo-block__company-name">
+                  Smart Device
+                </h2>
+                <span class="logo-block__description">
+                  умные технологии
+                </span>
+              </div>
+            </a>
+          </section>
+          <section class="header__contacts-block">
+            <h2 class="visually-hidden">Контакты</h2>
+            <a class="header__contact-link header__contact-link--email" href="mailto:info@sd.ru">
+              <svg width="20" height="20" class="header__link-icon">
+                <use xlink:href="img/sprite.svg#email-icon"></use>
+              </svg>
+              <span class="header__link-text">
+                info@sd.ru
               </span>
-            </div>
-          </a>
-        </section>
-        <section class="header__contacts-block">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="header__contact-link header__contact-link--email" href="mailto:info@sd.ru">
-            <svg width="20" height="20" class="header__link-icon">
-              <use xlink:href="img/sprite.svg#email-icon"></use>
-            </svg>
-            <span class="header__link-text">
-              info@sd.ru
-            </span>
-          </a>
-          <a class="header__contact-link header__contact-link--phone" href="tel:+74950005252">
-            <svg width="20" height="20" class="header__link-icon">
-              <use xlink:href="img/sprite.svg#phone-icon"></use>
-            </svg>
-            <span class="header__link-text">
-              +7 (495) 000 52 52
-            </span>
-          </a>
-        </section>
-        <button class="header__open-popup-btn" type="button">
-          Заказать звонок
-        </button>
+            </a>
+            <a class="header__contact-link header__contact-link--phone" href="tel:+74950005252">
+              <svg width="20" height="20" class="header__link-icon">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>
+              <span class="header__link-text">
+                +7 (495) 000 52 52
+              </span>
+            </a>
+          </section>
+          <button class="header__open-popup-btn" type="button">
+            Заказать звонок
+          </button>
+        </div>
       </header>
       <main class="main">
         <section class="main__main-description main-description">
-          <h1>
-            Печатные платы
-          </h1>
-          <p>
-            производство и монтаж, поставка комплектующих, блоков и модулей
-          </p>
-          <button class="main-description__button">
-            Получить беслпатную консультацию
-          </button>
+          <div class="main-description__wrapper">
+            <h1>
+              Печатные платы
+            </h1>
+            <p>
+              производство и монтаж, поставка комплектующих, блоков и модулей
+            </p>
+            <button class="main-description__button">
+              Получить беслпатную консультацию
+            </button>
+          </div>
         </section>
         <section class="main__benefits-block benefits-block">
           <ul class="benefits-block__list">
@@ -142,13 +146,13 @@
           </div>
         </section>
         <section class="main__products products">
-          <h2 class="products__title">
+          <h2>
             Smart Device предлагает следующие товары и услуги
           </h2>
           <ul class="products__list">
             <li class="products__product-card product-card product-card--1">
               <a class="product-card__link" href="#">
-                <h3 class="product-card__title">
+                <h3>
                   Производство печатных
                   плат
                 </h3>
@@ -161,7 +165,7 @@
             </li>
             <li class="products__product-card product-card product-card--2">
               <a class="product-card__link" href="#">
-                <h3 class="product-card__title">
+                <h3>
                   Монтаж печатных плат
                 </h3>
                 <div class="product-card__button">
@@ -173,7 +177,7 @@
             </li>
             <li class="products__product-card product-card product-card--3">
               <a class="product-card__link" href="#">
-                <h3 class="product-card__title">
+                <h3>
                   Комплектующие для светотехники
                 </h3>
                 <div class="product-card__button">
@@ -186,173 +190,177 @@
           </ul>
         </section>
         <section class="main__feedback-form-section feedback-form-section" id="feedback-form">
-          <picture>
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" height="285">
-            <img class="feedback-form-section__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." height="285">
-          </picture>
-          <div class="feedback-form-section__form-wrapper">
-            <h2>
-              Остались вопросы? Задайте их нам!
-            </h2>
-            <p>
-              Мы проконсультируем Вас бесплатно
-            </p>
-            <form class="feedback-form-section__feedback-form feedback-form" method="post" action="#">
-              <div class="feedback-form__name-wrapper">
-                <label class="visually-hidden" for="name-input" >Имя</label>
-                <input id="name-input" type="text" placeholder="Имя">
-              </div>
-              <div class="feedback-form__phone-wrapper">
-                <label class="visually-hidden" for="phone-input" data-validate-type="phone">Телефон</label>
-                <input id="phone-input" name="phone" type="tel" placeholder="Телефон">
-              </div>
-              <div class="feedback-form__question-wrapper">
-                <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
-                <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
-              </div>
-              <button type="submit">
-                Задать вопрос
-              </button>
-              <div class="feedback-form__checkbox-wrapper">
-                <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
-                <span></span>
-                <label for="access-checkbox">
-                  Я согласен на обработку  персональных данных
-                </label>
-              </div>
-            </form>
+          <div class="feedback-form-section__wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x" width="510" height="285">
+              <img class="feedback-form-section__image" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик." width="510" height="285">
+            </picture>
+            <div class="feedback-form-section__form-wrapper">
+              <h2>
+                Остались вопросы? Задайте их нам!
+              </h2>
+              <p>
+                Мы проконсультируем Вас бесплатно
+              </p>
+              <form class="feedback-form-section__feedback-form feedback-form" method="post" action="#">
+                <div class="feedback-form__name-wrapper">
+                  <label class="visually-hidden" for="name-input" >Имя</label>
+                  <input id="name-input" type="text" placeholder="Имя">
+                </div>
+                <div class="feedback-form__phone-wrapper" data-validate-type="phone">
+                  <label class="visually-hidden" for="phone-input">Телефон</label>
+                  <input id="phone-input" name="phone" type="tel" placeholder="Телефон">
+                </div>
+                <div class="feedback-form__question-wrapper">
+                  <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
+                  <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <button type="submit">
+                  Задать вопрос
+                </button>
+                <div class="feedback-form__checkbox-wrapper">
+                  <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
+                  <span></span>
+                  <label for="access-checkbox">
+                    Я согласен на обработку  персональных данных
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__socials-wrapper socials-wrapper">
-          <section class="logo-block logo-block--footer">
-            <h2 class="visually-hidden">Smart device Умные технологии</h2>
-            <a class="logo-block__link" href="index.html">
-              <svg width="55" height="55" class="logo-block__logo logo-block__logo--footer">
-                <use xlink:href="img/sprite.svg#main-logo"></use>
-              </svg>
-              <div class="logo-block__wrapper">
-                <h3 class="logo-block__company-name logo-block__company-name--footer">
-                  Smart Device
-                </h3>
-                <span class="logo-block__description logo-block__description--footer">
-                  умные технологии
-                </span>
-              </div>
-            </a>
-          </section>
-          <section class="socials-wrapper__social-links social-links">
-            <h2 class="visually-hidden">
-              Наши соцсети
-            </h2>
-            <ul class="social-links__list">
-              <li class="social-links__item">
-                <a class="social-links__link social-links__link--ok" href="#">
-                  <svg width="30" height="30" class="social-links__icon social-links__icon--ok">
-                    <use xlink:href="img/sprite.svg#icon-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a class="social-links__link social-links__link--vk" href="#">
-                  <svg width="30" height="30" class="social-links__icon social-links__icon--vk">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a class="social-links__link social-links__link--pinterest" href="#">
-                  <svg width="30" height="30" class="social-links__icon social-links__icon--pinterest">
-                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="footer__links-wrapper">
-          <section class="footer__nav-section nav-section">
-            <div class="nav-section__title-wrapper">
-              <h2 class="nav-section__title">
-                Разделы сайта
+        <div class="footer__footer-wrapper">
+          <div class="footer__socials-wrapper socials-wrapper">
+            <section class="logo-block logo-block--footer">
+              <h2 class="visually-hidden">Smart device Умные технологии</h2>
+              <a class="logo-block__link" href="index.html">
+                <svg width="55" height="55" class="logo-block__logo logo-block__logo--footer">
+                  <use xlink:href="img/sprite.svg#main-logo"></use>
+                </svg>
+                <div class="logo-block__wrapper">
+                  <h3 class="logo-block__company-name logo-block__company-name--footer">
+                    Smart Device
+                  </h3>
+                  <span class="logo-block__description logo-block__description--footer">
+                    умные технологии
+                  </span>
+                </div>
+              </a>
+            </section>
+            <section class="socials-wrapper__social-links social-links">
+              <h2 class="visually-hidden">
+                Наши соцсети
               </h2>
-              <button class="nav-section__button-plus" type="button">
-                <span class="visually-hidden">Показать все</span>
-              </button>
-            </div>
-            <nav class="nav-section__navigation">
-              <ul class="nav-section__list">
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    О Компании
+              <ul class="social-links__list">
+                <li class="social-links__item">
+                  <a class="social-links__link social-links__link--ok" href="#">
+                    <svg width="30" height="30" class="social-links__icon social-links__icon--ok">
+                      <use xlink:href="img/sprite.svg#icon-ok"></use>
+                    </svg>
                   </a>
                 </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Продукты
+                <li class="social-links__item">
+                  <a class="social-links__link social-links__link--vk" href="#">
+                    <svg width="30" height="30" class="social-links__icon social-links__icon--vk">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
                   </a>
                 </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Производство печатных плат
-                  </a>
-                </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Монтаж печатных плат
-                  </a>
-                </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Комплектующие
-                  </a>
-                </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Доставка
-                  </a>
-                </li>
-                <li class="nav-section__item">
-                  <a class="nav-section__link" href="#">
-                    Контакты
+                <li class="social-links__item">
+                  <a class="social-links__link social-links__link--pinterest" href="#">
+                    <svg width="30" height="30" class="social-links__icon social-links__icon--pinterest">
+                      <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
-            </nav>
-          </section>
-          <section class="footer__contacts-section contacts-section">
-            <div class="contacts-section__title-wrapper">
-              <h2 class="contacts-section__title">
-                Наш офис     
-              </h2>
-              <button class="contacts-section__button-plus" type="button">
-                <span class="visually-hidden">Показать все</span>
-              </button>
-            </div>
-            <ul class="contacts-section__list">
-              <li class="contacts-section__item">
-                <a class="contacts-section__link" href="https://goo.gl/maps/kcRK9qafQSaS3DuT6">
-                  г. Мытищи, Олимпийский проспект, д.10
-                </a>
-              </li>
-              <li class="contacts-section__item">
-                <a class="contacts-section__link" href="tel:+74955894050">
-                  +7 (495) 589-40-50
-                </a>
-              </li>
-              <li class="contacts-section__item">
-                <a class="contacts-section__link" href="tel:+79253895829">
-                  +7 (925) 389-58-29
-                </a>
-              </li>
-              <li class="contacts-section__item">
-                <a class="contacts-section__link" href="tel:+79253647813">
-                  +7 (925) 364-78-13
-                </a>
-              </li>
-            </ul>
-          </section>
+            </section>
+          </div>
+          <div class="footer__links-wrapper">
+            <section class="footer__nav-section nav-section">
+              <div class="nav-section__title-wrapper">
+                <h2 class="nav-section__title">
+                  Разделы сайта
+                </h2>
+                <button class="nav-section__button-plus" type="button">
+                  <span class="visually-hidden">Показать все</span>
+                </button>
+              </div>
+              <nav class="nav-section__navigation">
+                <ul class="nav-section__list">
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      О Компании
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Продукты
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Производство печатных плат
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Монтаж печатных плат
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Комплектующие
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="nav-section__item">
+                    <a class="nav-section__link" href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <section class="footer__contacts-section contacts-section">
+              <div class="contacts-section__title-wrapper">
+                <h2 class="contacts-section__title">
+                  Наш офис     
+                </h2>
+                <button class="contacts-section__button-plus" type="button">
+                  <span class="visually-hidden">Показать все</span>
+                </button>
+              </div>
+              <ul class="contacts-section__list">
+                <li class="contacts-section__item">
+                  <a class="contacts-section__link" href="https://goo.gl/maps/kcRK9qafQSaS3DuT6">
+                    г. Мытищи, Олимпийский проспект, д.10
+                  </a>
+                </li>
+                <li class="contacts-section__item">
+                  <a class="contacts-section__link" href="tel:+74955894050">
+                    +7 (495) 589-40-50
+                  </a>
+                </li>
+                <li class="contacts-section__item">
+                  <a class="contacts-section__link" href="tel:+79253895829">
+                    +7 (925) 389-58-29
+                  </a>
+                </li>
+                <li class="contacts-section__item">
+                  <a class="contacts-section__link" href="tel:+79253647813">
+                    +7 (925) 364-78-13
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
       </footer>
       <div class="popup">
@@ -369,24 +377,24 @@
             </p>
             <form class="popup__feedback-form feedback-form" method="post" action="#">
               <div class="feedback-form__name-wrapper">
-                <label class="visually-hidden" for="name-input" >Имя</label>
-                <input id="name-input" type="text" placeholder="Имя">
+                <label class="visually-hidden" for="popup-name-input" >Имя</label>
+                <input id="popup-name-input" type="text" placeholder="Имя">
               </div>
-              <div class="feedback-form__phone-wrapper">
-                <label class="visually-hidden" for="phone-input" data-validate-type="phone">Телефон</label>
-                <input id="phone-input" name="phone" type="tel" placeholder="Телефон">
+              <div class="feedback-form__phone-wrapper" data-validate-type="phone">
+                <label class="visually-hidden" for="popup-phone-input">Телефон</label>
+                <input id="popup-phone-input" name="phone" type="tel" placeholder="Телефон">
               </div>
               <div class="feedback-form__question-wrapper">
-                <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
-                <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
+                <label class="visually-hidden" for="popup-question-textarea">Ваш вопрос</label>
+                <textarea id="popup-question-textarea" placeholder="Ваш вопрос"></textarea>
               </div>
               <button type="submit">
                 Задать вопрос
               </button>
               <div class="feedback-form__checkbox-wrapper">
-                <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
+                <input class="visually-hidden" id="popup-access-checkbox" name="access" value="true" type="checkbox" checked>
                 <span></span>
-                <label for="access-checkbox">
+                <label for="popup-access-checkbox">
                   Я согласен на обработку  персональных данных
                 </label>
               </div>

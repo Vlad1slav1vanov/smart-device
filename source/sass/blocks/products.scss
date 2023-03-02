@@ -19,6 +19,10 @@
   margin: 0 auto;
   justify-content: space-between;
 
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
+
   @media (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
@@ -27,7 +31,7 @@
   }
 }
 
-.products__title {
+.products h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-default-white;
   font-weight: 400;
@@ -36,6 +40,10 @@
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 50px;
+
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
 
   @media (max-width: 1023px) {
     margin: 0;

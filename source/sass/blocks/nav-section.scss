@@ -1,15 +1,15 @@
 .nav-section {
-  padding: 20px 25px;
-  border-top: 1px solid rgba(248, 253, 255, 0.7);
-  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  margin-right: 30px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     border: none;
-    padding: 0;
+    margin-right: 0;
   }
 
-  @media (min-width: 1024px) {
-    margin-right: 30px;
+  @media (max-width: 767px) {
+    padding: 20px 25px;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
 
@@ -18,9 +18,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 
-  @media (min-width: 768px) {
-    margin-bottom: 20px;
+  @media (max-width: 1023px) {
+    margin-bottom: 0;
   }
 }
 
@@ -35,6 +36,7 @@
 
 .nav-section__button-plus {
   position: relative;
+  display: none;
   width: 15px;
   height: 15px;
   background-color: inherit;
@@ -59,8 +61,8 @@
     background-color: $color-default-white;
   }
 
-  @media (min-width: 768px) {
-    display: none;
+  @media (max-width: 767px) {
+    display: block;
   }
 }
 
@@ -72,51 +74,48 @@
 
 .nav-section__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 21px;
   color: $clipped-white;
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 21px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 
 .nav-section__navigation {
-  display: none;
-  padding-top: 15px;
+  display: block;
+  padding-top: 0;
 
-  @media (min-width: 768px) {
-    display: block;
-    padding-top: 0;
-  }
+  @media (max-width: 767px) {
+    display: none;
+    padding-top: 15px;
 
-  &--is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    &--is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
   }
 }
 
 .nav-section__list {
   padding: 0;
+  width: 470px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
+  column-gap: 30px;
+  height: 130px;
 
-  @media (min-width: 1085px) {
-    flex-direction: row;
-    gap: 30px;
+  @media (max-width: 1400px) {
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
   }
-}
-
-.nav-section__first-column-wrapper, 
-.nav-section__second-column-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: space-between;
 }

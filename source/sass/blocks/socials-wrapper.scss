@@ -1,21 +1,25 @@
 .socials-wrapper {
-  padding: 35px 50px 25px 50px;
+  flex-direction: column;
+  margin-bottom: 0;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+  margin-right: 8.3%;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: row;
+    margin-right: 0;
     width: 100%;
     margin-bottom: 35px;
   }
 
-  @media (min-width: 1024px) {
+  @media (max-width: 767px) {
     flex-direction: column;
-    margin-bottom: 0;
-    justify-content: flex-start;
-    align-items: center;
-    width: max-content;
-    margin-right: 8.3%;
+    margin: 0;
+    padding: 35px 50px 25px 50px;
   }
 }

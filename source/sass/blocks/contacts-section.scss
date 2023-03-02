@@ -1,10 +1,10 @@
 .contacts-section {
-  padding: 20px 25px;
-  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  border: none;
+  padding: 0;
 
-  @media (min-width: 768px) {
-    border: none;
-    padding: 0;
+  @media (max-width: 767px) {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
 
@@ -13,13 +13,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 
-  @media (min-width: 768px) {
-    margin-bottom: 20px;
+  @media (max-width: 767px) {
+    margin-bottom: 0;
   }
 }
 
 .contacts-section__button-plus {
+  display: none;
   position: relative;
   width: 15px;
   height: 15px;
@@ -45,8 +47,8 @@
     background-color: $color-default-white;
   }
 
-  @media (min-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    display: block;
   }
 }
 
@@ -71,32 +73,32 @@
 
 .contacts-section__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
   color: $clipped-white;
+  font-size: 16px;
+  line-height: 21px;
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 21px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 
 .contacts-section__list {
-  display: none;
-  padding-top: 15px;
+  display: flex;
+  padding-top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 
-  @media (min-width: 768px) {
-    display: flex;
-    padding-top: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-  }
+  @media (max-width: 767px) {
+    display: none;
+    padding-top: 15px;
 
-  &--is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    &--is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
   }
 }

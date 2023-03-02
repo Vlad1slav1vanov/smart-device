@@ -1,29 +1,44 @@
 .header {
   position: absolute;
+
+  position: fixed;
+  height: 120px;
   top: 0;
   width: 100vw;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @media (min-width: $vp-1024) {
-    position: fixed;
+  @media (max-width: 1023px) {
+    height: 100px;
+    padding: 0 70px 0 50px;
+  }
+
+  @media (max-width: 767px) {
+    height: 70px;
+    padding: 0 35px 0 26px;
+  }
+}
+
+.header__wrapper {
+  width: 62.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    width: 80%;
+  }
+
+  @media (max-width: 1023px) {
+    width: 100%;
   }
 }
 
 .header__logo-block {
-  margin-right: 38.7%;
-
-  @media (min-width: $vp-1024) {
-    margin-right: 8.3%;
-  }
-
-  @media (min-width: $vp-768) {
-    margin-right: 43.5%;
-  }
+  padding: 0;
 }
 
 .header__contacts-block {
@@ -32,7 +47,6 @@
   gap: 20px;
 
   @media (min-width: $vp-1024) {
-    margin-right: 7.3%;
     gap: 30px;
   }
 }
@@ -43,12 +57,7 @@
   padding: 10px;
 
   @media (min-width: $vp-1024) {
-    width: 225px;
     gap: 15px;
-
-    &:nth-child(2) {
-      width: 228px;
-    }
   }
 }
 
@@ -68,6 +77,7 @@
 
   @media (min-width: $vp-1024) {
     display: block;
+    width: 160px;
     background-color: inherit;
     font-family: "Roboto Condensed", "Arial", "sans-serif";
     font-size: 14px;
