@@ -11,11 +11,12 @@
 
   @media (max-width: 768px) {
     padding: 50px 25px;
+    padding-bottom: 40px;
   }
 }
 
 .benefits-block__list {
-  max-width: 62.5%;
+  max-width: 63%;
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;

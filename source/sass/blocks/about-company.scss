@@ -1,6 +1,6 @@
 .about-company {
   display: flex;
-  gap: 100px;
+  gap: 90px;
   padding: 0;
   width: 62.5%;
   margin: 0 auto;
@@ -20,6 +20,10 @@
     margin-bottom: 20px;
   }
 
+  & .about-company__providers-description {
+    margin-bottom: 45px;
+  }
+
   & button {
     width: 180px;
     padding: 14px;
@@ -35,7 +39,7 @@
   }
 
   @media (max-width: 1023px) {
-    gap: 30px;
+    gap: 25px;
     padding: 0 50px 80px 50px;
     width: 100%;
     margin-bottom: 0;
@@ -54,6 +58,7 @@
     & p {
       font-size: 14px;
       line-height: 19px;
+      margin-bottom: 15px;
     }
 
     & button {

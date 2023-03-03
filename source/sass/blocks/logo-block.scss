@@ -81,4 +81,10 @@
     margin: 0;
     margin-bottom: 30px;
   }
+
+  @media (max-width: 767px) {
+    & > .logo-block__link {
+      width: 205px;
+    }
+  }
 }

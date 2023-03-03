@@ -11,7 +11,7 @@
 
   h1 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     color: $base-white-font;
@@ -50,6 +50,11 @@
       font-size: 64px;
       line-height: 75px;
       width: auto;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 60px;
     }
 
     button {
@@ -59,17 +64,19 @@
 
   @media (max-width: 767px) {
     background-position: -254px;
-    padding: 150px 25px 190px 25px;
+    padding: 150px 25px 195px 25px;
 
     h1 {
       font-size: 36px;
       line-height: 42px;
       width: auto;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 14px;
       line-height: 22px;
+      margin-bottom: 40px;
     }
 
     button {
@@ -92,6 +99,7 @@
   }
 
   @media (max-width: 1023px) {
+    width: auto;
     margin-left: 0;
   }
 }

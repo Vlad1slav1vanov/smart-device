@@ -1,8 +1,8 @@
 .feedback-form-section {
   position: relative;
   background-color: $base-blue;
-  padding-top: 170px;
-  padding-bottom: 195px;
+  padding-top: 165px;
+  padding-bottom: 245px;
   background-image: url("../../img/bg-form.png");
   background-repeat: no-repeat;
   background-size: 50% 100%;
@@ -17,39 +17,48 @@
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 51px;
     margin-bottom: 10px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     color: $color-default-white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   p {
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     color: $color-default-white;
   }
 
   @media (max-width: 1023px) {
     padding: 50px 50px 125px 50px;
     background-image: none;
+
+    h2 {
+      margin-bottom: 7px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
   }
 
   @media (max-width: 767px) {
-    padding: 50px 25px 90px 25px;
+    padding: 45px 25px 90px 25px;
 
     h2 {
-      font-size: 30px;
+      font-size: 28px;
       line-height: 42px;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 14px;
       line-height: 19px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 }
