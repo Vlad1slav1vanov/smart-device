@@ -790,7 +790,7 @@ button,
   width: 100%;
   height: 880px;
   background-color: #000;
-  background-image: url("../../img/main-block-background.jpg");
+  background-image: url("../img/main-block-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 305px;
@@ -1025,15 +1025,15 @@ button,
 }
 
 .product-card--1 {
-  background-image: url("../../img/card-1-desktop.jpg");
+  background-image: url("../img/card-1-desktop.jpg");
 }
 
 .product-card--2 {
-  background-image: url("../../img/card-2-desktop.jpg");
+  background-image: url("../img/card-2-desktop.jpg");
 }
 
 .product-card--3 {
-  background-image: url("../../img/card-3-desktop.jpg");
+  background-image: url("../img/card-3-desktop.jpg");
 }
 
 .product-card__link {
@@ -1073,7 +1073,7 @@ button,
   background-color: #00B2FF;
   padding-top: 165px;
   padding-bottom: 245px;
-  background-image: url("../../img/bg-form.png");
+  background-image: url("../img/bg-form.png");
   background-repeat: no-repeat;
   background-size: 50% 100%;
   display: -webkit-box;
@@ -1494,7 +1494,7 @@ button,
   top: 15px;
   right: 15px;
   background-color: inherit;
-  background-image: url("../../img/sprite/icon-close-popup.svg");
+  background-image: url("../img/sprite/icon-close-popup.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1624,7 +1624,7 @@ button,
 }
 
 .feedback-form__checkbox-wrapper input:checked + span {
-  background-image: url("../../img/sprite/checkbox.svg");
+  background-image: url("../img/sprite/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1870,15 +1870,15 @@ button,
   }
 
   .product-card--1 {
-    background-image: url("../../img/card-1-tablet.jpg");
+    background-image: url("../img/card-1-tablet.jpg");
   }
 
   .product-card--2 {
-    background-image: url("../../img/card-2-tablet.jpg");
+    background-image: url("../img/card-2-tablet.jpg");
   }
 
   .product-card--3 {
-    background-image: url("../../img/card-3-tablet.jpg");
+    background-image: url("../img/card-3-tablet.jpg");
   }
 
   .product-card__link {
@@ -2131,15 +2131,15 @@ button,
   }
 
   .product-card--1 {
-    background-image: url("../../img/card-1.jpg");
+    background-image: url("../img/card-1.jpg");
   }
 
   .product-card--2 {
-    background-image: url("../../img/card-2.jpg");
+    background-image: url("../img/card-2.jpg");
   }
 
   .product-card--3 {
-    background-image: url("../../img/card-3.jpg");
+    background-image: url("../img/card-3.jpg");
   }
 
   .product-card__link {
