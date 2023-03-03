@@ -76,7 +76,12 @@
   top: 15px;
   right: 15px;
   background-color: inherit;
-  background-image: url("../../img/sprite/icon-close-popup.svg");
+  background-image: url("../img/sprite/icon-close-popup.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    outline: 1px solid #fff;
+    border-radius: 50%;
+  }
 }

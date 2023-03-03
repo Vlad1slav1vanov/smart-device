@@ -716,12 +716,21 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 10px;
+  color: #F2F5F6;
+}
+
+.header__contact-link:hover {
+  color: #00B2FF;
+}
+
+.header__contact-link:focus {
+  outline: 2px solid #00B2FF;
 }
 
 .header__link-text {
   font-size: 16px;
   line-height: 18px;
-  color: #F2F5F6;
+  color: inherit;
   display: none;
 }
 
@@ -733,6 +742,10 @@ button,
   color: #00B2FF;
   border-color: #00B2FF;
   cursor: pointer;
+}
+
+.header__open-popup-btn:focus {
+  outline: 2px solid #00B2FF;
 }
 
 .main-description {
@@ -782,6 +795,10 @@ button,
 
 .main-description button:hover {
   background-color: #041827;
+}
+
+.main-description button:focus {
+  outline: 2px solid #F2F5F6;
 }
 
 .main-description__wrapper {
@@ -923,6 +940,10 @@ button,
   background-color: #041827;
 }
 
+.about-company button:focus {
+  outline: 2px solid #00B2FF;
+}
+
 .about-company__third-paragraph {
   display: block;
 }
@@ -986,6 +1007,10 @@ button,
   background-size: cover;
 }
 
+.product-card:hover {
+  outline: 1px solid #00B2FF;
+}
+
 .product-card--1 {
   background-image: url("../img/card-1-desktop.jpg");
 }
@@ -1004,6 +1029,10 @@ button,
   width: 100%;
   padding: 50px 22.8% 545px 11.4%;
   height: 650px;
+}
+
+.product-card__link:focus {
+  outline: 2px solid #fff;
 }
 
 .product-card__button {
@@ -1214,6 +1243,10 @@ button,
   color: #00B2FF;
 }
 
+.nav-section__link:focus {
+  outline: 2px solid #fff;
+}
+
 .nav-section__navigation {
   display: block;
   padding-top: 0;
@@ -1315,6 +1348,10 @@ button,
   color: #00B2FF;
 }
 
+.contacts-section__link:focus {
+  outline: 2px solid #fff;
+}
+
 .contacts-section__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1390,6 +1427,11 @@ button,
 
 .social-links__link:hover svg {
   fill: #00B2FF;
+}
+
+.social-links__link:focus {
+  outline: 2px solid #fff;
+  border-radius: 50%;
 }
 
 .social-links__icon {
@@ -1482,9 +1524,14 @@ button,
   top: 15px;
   right: 15px;
   background-color: inherit;
-  background-image: url("../../img/sprite/icon-close-popup.svg");
+  background-image: url("../img/sprite/icon-close-popup.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.popup__button-close:hover {
+  outline: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .feedback-form {
@@ -1561,6 +1608,11 @@ button,
   line-height: 21px;
 }
 
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid #fff;
+}
+
 .feedback-form textarea {
   padding: 25px 15px;
   height: 155px;
@@ -1578,6 +1630,10 @@ button,
   padding: 13px 25px;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.feedback-form button:focus {
+  outline: 2px solid #fff;
 }
 
 .feedback-form button:hover {
@@ -1632,6 +1688,10 @@ button,
   background-image: url("../img/sprite/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.feedback-form__checkbox-wrapper input:focus + span {
+  outline: 2px solid #fff;
 }
 
 /* @mixin hover-focus {

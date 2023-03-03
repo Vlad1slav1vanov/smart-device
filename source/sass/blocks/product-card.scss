@@ -6,6 +6,10 @@
   background-position: center;
   background-size: cover;
 
+  &:hover {
+    outline: 1px solid $base-blue;
+  }
+
   &--1 {
     background-image: url("../img/card-1-desktop.jpg");
   }
@@ -61,6 +65,10 @@
 
   @media (max-width: 767px) {
     padding: 30px 90px 160px 30px;
+  }
+
+  &:focus {
+    outline: 2px solid #fff;
   }
 }
 

@@ -35,6 +35,11 @@
   &:hover svg {
     fill: $base-blue;
   }
+
+  &:focus {
+    outline: 2px solid #fff;
+    border-radius: 50%;
+  }
 }
 
 .social-links__icon {

@@ -96,6 +96,10 @@
   background-color: $base-black-font;
 }
 
+.main-description button:focus {
+  outline: 2px solid $base-white-font;
+}
+
 .main-description__wrapper {
   width: 770px;
   margin-left: 24.7%;

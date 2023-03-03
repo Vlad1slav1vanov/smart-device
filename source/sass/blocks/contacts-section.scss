@@ -72,8 +72,13 @@
   color: $clipped-white;
   font-size: 16px;
   line-height: 21px;
+
   &:hover {
     color: $base-blue;
+  }
+
+  &:focus {
+    outline: 2px solid #fff;
   }
 
   @media (max-width: 767px) {

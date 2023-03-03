@@ -85,6 +85,15 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  color: $base-white-font;
+
+  &:hover {
+    color: $base-blue;
+  }
+
+  &:focus {
+    outline: 2px solid $base-blue;
+  }
 
   @media (min-width: $vp-1024) {
     gap: 15px;
@@ -96,7 +105,8 @@
 .header__link-text {
   font-size: 16px;
   line-height: 18px;
-  color: $base-white-font;
+  color: inherit;
+
   display: none;
 
   @media (min-width: $vp-1024) {
@@ -111,6 +121,10 @@
     color: $base-blue;
     border-color: $base-blue;
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: 2px solid $base-blue;
   }
 
   @media (min-width: $vp-1024) {
