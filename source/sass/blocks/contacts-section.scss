@@ -3,7 +3,6 @@
   padding: 0;
 
   @media (max-width: 767px) {
-    padding: 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -16,6 +15,7 @@
   margin-bottom: 20px;
 
   @media (max-width: 767px) {
+    padding: 20px 25px;
     margin-bottom: 0;
   }
 }
@@ -100,12 +100,12 @@
 
   @media (max-width: 767px) {
     display: none;
-    padding-top: 15px;
 
     &--is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 0 25px 20px 25px;
       gap: 10px;
     }
   }

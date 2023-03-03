@@ -1,7 +1,9 @@
 const openNavButton = document.querySelector(".nav-section__button-plus");
 const openContactsButton = document.querySelector(".contacts-section__button-plus");
+const navTitleField = document.querySelector(".nav-section__title-wrapper");
 const contactsList = document.querySelector(".contacts-section__list");
 const navigation = document.querySelector(".nav-section__navigation");
+const contactsTitleField = document.querySelector(".contacts-section__title-wrapper");
 
 const toggleContactsList = () => {
   contactsList.classList.toggle("contacts-section__list--is-open");
@@ -24,8 +26,8 @@ const toggleNavigation = () => {
 }
 
 const accordionsToggle = () => {
-  openNavButton.addEventListener("click", toggleNavigation);
-  openContactsButton.addEventListener("click", toggleContactsList);
+  navTitleField.addEventListener("click", toggleNavigation);
+  contactsTitleField.addEventListener("click", toggleContactsList);
 }
 
 export {accordionsToggle};

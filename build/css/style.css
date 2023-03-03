@@ -1440,8 +1440,8 @@ button,
 
 .popup {
   display: none;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -1453,44 +1453,60 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .popup h2 {
-  font-size: 36px;
-  line-height: 51px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 42px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .popup p {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   color: #ffffff;
 }
 
-.popup .feedback-form__checkbox-wrapper {
-  -ms-grid-row: 4;
-  grid-area: 4/1/4/-1;
-}
-
-.popup form > button {
-  -ms-grid-row: 3;
-  grid-area: 3/1/3/-1;
+.popup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
   width: 100%;
 }
 
-.popup .feedback-form__question-wrapper {
-  margin-bottom: 0;
+.popup form button {
+  width: 100%;
 }
 
 .popup--is-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.popup .feedback-form__name-wrapper,
+.popup .feedback-form__phone-wrapper,
+.popup .feedback-form__question-wrapper {
+  width: 100%;
+}
+
+.popup .feedback-form__question-wrapper {
+  margin-bottom: 5px;
+  height: 155px;
 }
 
 .popup__wrapper {
@@ -1500,21 +1516,6 @@ button,
   background-color: #00B2FF;
   border-radius: 3px;
   padding: 40px;
-}
-
-.popup__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #ffffff;
-  font-size: 30px;
-  margin-bottom: 15px;
-  font-weight: 400;
-}
-
-.popup__description {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 40px;
 }
 
 .popup__button-close {
@@ -1827,6 +1828,7 @@ button,
   }
 
   .header {
+    position: absolute;
     height: 100px;
     padding: 0 70px 0 50px;
   }
@@ -2047,7 +2049,6 @@ button,
   }
 
   .header {
-    position: absolute;
     height: 70px;
     padding: 0 35px 0 26px;
   }
@@ -2239,12 +2240,12 @@ button,
   }
 
   .nav-section {
-    padding: 20px 25px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .nav-section__title-wrapper {
+    padding: 20px 25px;
     margin-bottom: 0;
   }
 
@@ -2259,7 +2260,6 @@ button,
 
   .nav-section__navigation {
     display: none;
-    padding-top: 15px;
   }
 
   .nav-section__navigation--is-open {
@@ -2274,14 +2274,15 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 10px;
+    padding: 0 25px 20px 25px;
   }
 
   .contacts-section {
-    padding: 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .contacts-section__title-wrapper {
+    padding: 20px 25px;
     margin-bottom: 0;
   }
 
@@ -2292,7 +2293,6 @@ button,
 
   .contacts-section__list {
     display: none;
-    padding-top: 15px;
   }
 
   .contacts-section__list--is-open {
@@ -2306,6 +2306,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding: 0 25px 20px 25px;
     gap: 10px;
   }
 
