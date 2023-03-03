@@ -1,6 +1,4 @@
 .header {
-  position: absolute;
-
   position: fixed;
   height: 120px;
   top: 0;
@@ -17,10 +15,32 @@
   }
 
   @media (max-width: 767px) {
+    position: absolute;
     height: 70px;
     padding: 0 35px 0 26px;
   }
 }
+
+.header__logo {
+  &--mobile {
+    display: none;
+  }
+
+  &--full {
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    &--mobile {
+      display: block;
+    }
+
+    &--full {
+      display: none;
+    }
+  }
+}
+
 
 .header__wrapper {
   width: 62.5%;
@@ -39,11 +59,6 @@
   @media (max-width: 1023px) {
     width: 100%;
   }
-}
-
-.header__logo-block {
-  padding: 0;
-  margin-right: 60px;
 }
 
 .header__contacts-block {
@@ -91,6 +106,12 @@
 
 .header__open-popup-btn {
   display: none;
+
+  &:hover {
+    color: $base-blue;
+    border-color: $base-blue;
+    cursor: pointer;
+  }
 
   @media (min-width: $vp-1024) {
     display: block;

@@ -15,20 +15,14 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__wrapper">
-          <section class="header__logo-block logo-block">
-            <a class="logo-block__link" href="index.html">
-              <svg width="35" height="35" class="logo-block__logo">
-                <use xlink:href="img/sprite.svg#main-logo"></use>
-              </svg>
-              <div class="logo-block__wrapper">
-                <h2 class="logo-block__company-name">
-                  Smart Device
-                </h2>
-                <span class="logo-block__description">
-                  умные технологии
-                </span>
-              </div>
-            </a>
+          <section class="header__logo-block">
+            <h2 class="visually-hidden">Smart Device умные технологии</h2>
+            <svg width="35" height="35" class="header__logo header__logo--mobile">
+              <use xlink:href="img/sprite.svg#main-logo"></use>
+            </svg>
+            <svg width="215" height="55" class="header__logo header__logo--full">
+              <use xlink:href="img/sprite.svg#main-logo-full"></use>
+            </svg>
           </section>
           <section class="header__contacts-block">
             <h2 class="visually-hidden">Контакты</h2>
@@ -220,7 +214,7 @@
                 </button>
                 <div class="feedback-form__checkbox-wrapper">
                   <input class="visually-hidden" id="access-checkbox" name="access" value="true" type="checkbox" checked>
-                  <span></span>
+                  <span id="form-checkbox"></span>
                   <label for="access-checkbox">
                     Я согласен на обработку  персональных данных
                   </label>
@@ -233,20 +227,12 @@
       <footer class="footer">
         <div class="footer__footer-wrapper">
           <div class="footer__socials-wrapper socials-wrapper">
-            <section class="logo-block logo-block--footer">
+            <section class="footer__logo-block">
               <h2 class="visually-hidden">Smart device Умные технологии</h2>
-              <a class="logo-block__link" href="index.html">
-                <svg width="55" height="55" class="logo-block__logo logo-block__logo--footer">
-                  <use xlink:href="img/sprite.svg#main-logo"></use>
+              <a class="footer__logo-link" href="index.html">
+                <svg width="215" height="55" class="footer__logo">
+                  <use xlink:href="img/sprite.svg#main-logo-full"></use>
                 </svg>
-                <div class="logo-block__wrapper">
-                  <h3 class="logo-block__company-name logo-block__company-name--footer">
-                    Smart Device
-                  </h3>
-                  <span class="logo-block__description logo-block__description--footer">
-                    умные технологии
-                  </span>
-                </div>
               </a>
             </section>
             <section class="socials-wrapper__social-links social-links">
@@ -255,21 +241,21 @@
               </h2>
               <ul class="social-links__list">
                 <li class="social-links__item">
-                  <a class="social-links__link social-links__link--ok" href="#">
+                  <a class="social-links__link social-links__link--ok" href="#" aria-label="Мы в одноклассниках">
                     <svg width="30" height="30" class="social-links__icon social-links__icon--ok">
                       <use xlink:href="img/sprite.svg#icon-ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-links__item">
-                  <a class="social-links__link social-links__link--vk" href="#">
+                  <a class="social-links__link social-links__link--vk" href="#" aria-label="Мы Вконтакте">
                     <svg width="30" height="30" class="social-links__icon social-links__icon--vk">
                       <use xlink:href="img/sprite.svg#icon-vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-links__item">
-                  <a class="social-links__link social-links__link--pinterest" href="#">
+                  <a class="social-links__link social-links__link--pinterest" href="#" aria-label="Мы в Pinterest">
                     <svg width="30" height="30" class="social-links__icon social-links__icon--pinterest">
                       <use xlink:href="img/sprite.svg#icon-pinterest"></use>
                     </svg>
@@ -389,11 +375,11 @@
                 <textarea id="popup-question-textarea" placeholder="Ваш вопрос"></textarea>
               </div>
               <button type="submit">
-                Задать вопрос
+                Отправить
               </button>
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden" id="popup-access-checkbox" name="access" value="true" type="checkbox" checked>
-                <span></span>
+                <span id="popup-checkbox"></span>
                 <label for="popup-access-checkbox">
                   Я согласен на обработку  персональных данных
                 </label>

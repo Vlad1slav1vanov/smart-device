@@ -68,6 +68,14 @@
   }
 }
 
+.about-company button {
+  cursor: pointer;
+}
+
+.about-company button:hover {
+  background-color: $base-black-font;
+}
+
 .about-company__third-paragraph {
   display: block;
 

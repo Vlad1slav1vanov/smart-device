@@ -31,4 +31,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover svg {
+    fill: $base-blue;
+  }
+}
+
+.social-links__icon {
+  fill: #F8FDFF;
 }

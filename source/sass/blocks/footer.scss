@@ -16,6 +16,21 @@
   }
 }
 
+.footer__logo-link {
+  display: block;
+  width: 215px;
+  height: 55px;
+  margin-bottom: 30px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
 .footer__footer-wrapper {
   width: 62.5%;
   display: flex;

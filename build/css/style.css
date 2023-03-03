@@ -654,67 +654,7 @@ button,
   padding: 0 40px;
 }
 
-.logo-block {
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-
-.logo-block__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.logo-block__company-name {
-  display: none;
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  color: #F2F5F6;
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: 700;
-}
-
-.logo-block__company-name--footer {
-  display: block;
-}
-
-.logo-block__description {
-  display: none;
-  font-family: "Roboto", "Arial", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.logo-block__description--footer {
-  display: block;
-}
-
-.logo-block__logo {
-  width: 55px;
-  height: 55px;
-}
-
-.logo-block--footer {
-  width: 215px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 0;
-}
-
 .header {
-  position: absolute;
   position: fixed;
   height: 120px;
   top: 0;
@@ -734,6 +674,14 @@ button,
   align-items: center;
 }
 
+.header__logo--mobile {
+  display: none;
+}
+
+.header__logo--full {
+  display: block;
+}
+
 .header__wrapper {
   width: 62.5%;
   margin: 0 auto;
@@ -748,11 +696,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.header__logo-block {
-  padding: 0;
-  margin-right: 60px;
 }
 
 .header__contacts-block {
@@ -784,6 +727,12 @@ button,
 
 .header__open-popup-btn {
   display: none;
+}
+
+.header__open-popup-btn:hover {
+  color: #00B2FF;
+  border-color: #00B2FF;
+  cursor: pointer;
 }
 
 .main-description {
@@ -819,6 +768,7 @@ button,
 }
 
 .main-description button {
+  cursor: pointer;
   padding: 15px 0;
   width: 420px;
   background-color: #00B2FF;
@@ -828,6 +778,10 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+.main-description button:hover {
+  background-color: #041827;
 }
 
 .main-description__wrapper {
@@ -959,6 +913,14 @@ button,
   color: #00B2FF;
   border: 1px solid #00B2FF;
   border-radius: 3px;
+}
+
+.about-company button {
+  cursor: pointer;
+}
+
+.about-company button:hover {
+  background-color: #041827;
 }
 
 .about-company__third-paragraph {
@@ -1149,6 +1111,13 @@ button,
   padding-bottom: 55px;
 }
 
+.footer__logo-link {
+  display: block;
+  width: 215px;
+  height: 55px;
+  margin-bottom: 30px;
+}
+
 .footer__footer-wrapper {
   width: 62.5%;
   display: -webkit-box;
@@ -1239,6 +1208,10 @@ button,
   font-size: 16px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-section__link:hover {
+  color: #00B2FF;
 }
 
 .nav-section__navigation {
@@ -1338,6 +1311,10 @@ button,
   line-height: 21px;
 }
 
+.contacts-section__link:hover {
+  color: #00B2FF;
+}
+
 .contacts-section__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1354,6 +1331,9 @@ button,
 }
 
 .socials-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1406,6 +1386,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.social-links__link:hover svg {
+  fill: #00B2FF;
+}
+
+.social-links__icon {
+  fill: #F8FDFF;
 }
 
 .popup {
@@ -1494,7 +1482,7 @@ button,
   top: 15px;
   right: 15px;
   background-color: inherit;
-  background-image: url("../img/sprite/icon-close-popup.svg");
+  background-image: url("../../img/sprite/icon-close-popup.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1579,6 +1567,7 @@ button,
 }
 
 .feedback-form button {
+  cursor: pointer;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1589,6 +1578,12 @@ button,
   padding: 13px 25px;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.feedback-form button:hover {
+  background-color: #ffffff;
+  color: #041827;
+  border: 1px solid #041827;
 }
 
 .feedback-form__question-wrapper {
@@ -1606,7 +1601,12 @@ button,
   align-items: center;
 }
 
+.feedback-form__checkbox-wrapper:hover span {
+  outline: 1px solid #fff;
+}
+
 .feedback-form__checkbox-wrapper label {
+  cursor: pointer;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -1614,6 +1614,7 @@ button,
 }
 
 .feedback-form__checkbox-wrapper span {
+  cursor: pointer;
   margin-left: 0;
   display: block;
   min-width: 15px;
@@ -1621,6 +1622,10 @@ button,
   border: 1px solid #ffffff;
   border-radius: 2px;
   margin-right: 10px;
+}
+
+.feedback-form__checkbox-wrapper span:hover {
+  outline: 1px solid #fff;
 }
 
 .feedback-form__checkbox-wrapper input:checked + span {
@@ -1671,19 +1676,6 @@ button,
 */
 
 @media (min-width: 768px) {
-  .logo-block__company-name {
-    display: block;
-  }
-
-  .logo-block__description {
-    display: block;
-  }
-
-  .logo-block--footer {
-    padding: 0;
-    margin: 0;
-  }
-
   .social-links {
     margin: 0;
   }
@@ -1694,16 +1686,6 @@ button,
 }
 
 @media (min-width: 1024px) {
-  .logo-block {
-    width: 215px;
-  }
-
-  .logo-block--footer {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
   .header__contacts-block {
     gap: 50px;
     width: 480px;
@@ -1921,6 +1903,10 @@ button,
     padding: 60px 50px 65px 50px;
   }
 
+  .footer__logo-link {
+    margin-bottom: 0;
+  }
+
   .footer__footer-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2000,23 +1986,18 @@ button,
     padding: 0 16px;
   }
 
-  .logo-block__logo {
-    width: 35px;
-    height: 35px;
-  }
-
-  .logo-block__logo--footer {
-    width: 55px;
-    height: 55px;
-  }
-
-  .logo-block--footer > .logo-block__link {
-    width: 205px;
-  }
-
   .header {
+    position: absolute;
     height: 70px;
     padding: 0 35px 0 26px;
+  }
+
+  .header__logo--mobile {
+    display: block;
+  }
+
+  .header__logo--full {
+    display: none;
   }
 
   .header__contacts-block {
@@ -2184,6 +2165,10 @@ button,
     padding-bottom: 35px;
   }
 
+  .footer__logo-link {
+    margin-bottom: 15px;
+  }
+
   .footer__footer-wrapper {
     padding: 0;
     width: 100%;
@@ -2197,6 +2182,10 @@ button,
     padding: 20px 25px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .nav-section__title-wrapper {
+    margin-bottom: 0;
   }
 
   .nav-section__button-plus {
@@ -2265,6 +2254,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0;
     padding: 35px 50px 0 50px;
   }

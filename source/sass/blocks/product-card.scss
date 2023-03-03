@@ -7,42 +7,42 @@
   background-size: cover;
 
   &--1 {
-    background-image: url("../../img/card-1-desktop.jpg");
+    background-image: url("../img/card-1-desktop.jpg");
   }
 
   &--2 {
-    background-image: url("../../img/card-2-desktop.jpg");
+    background-image: url("../img/card-2-desktop.jpg");
   }
 
   &--3 {
-    background-image: url("../../img/card-3-desktop.jpg");
+    background-image: url("../img/card-3-desktop.jpg");
   }
 
   @media (max-width: 1023px) {
     &--1 {
-      background-image: url("../../img/card-1-tablet.jpg");
+      background-image: url("../img/card-1-tablet.jpg");
     }
 
     &--2 {
-      background-image: url("../../img/card-2-tablet.jpg");
+      background-image: url("../img/card-2-tablet.jpg");
     }
 
     &--3 {
-      background-image: url("../../img/card-3-tablet.jpg");
+      background-image: url("../img/card-3-tablet.jpg");
     }
   }
 
   @media (max-width: 767px) {
     &--1 {
-      background-image: url("../../img/card-1.jpg");
+      background-image: url("../img/card-1.jpg");
     }
 
     &--2 {
-      background-image: url("../../img/card-2.jpg");
+      background-image: url("../img/card-2.jpg");
     }
 
     &--3 {
-      background-image: url("../../img/card-3.jpg");
+      background-image: url("../img/card-3.jpg");
     }
   }
 }

@@ -43,6 +43,7 @@
   }
 
   button {
+    cursor: pointer;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -78,6 +79,12 @@
   }
 }
 
+.feedback-form button:hover {
+  background-color: $color-default-white;
+  color: $base-black-font;
+  border: 1px solid $base-black-font;
+}
+
 .feedback-form__name-wrapper,
 .feedback-form__phone-wrapper,
 .feedback-form__question-wrapper {
@@ -104,7 +111,12 @@
   display: flex;
   align-items: center;
 
+  &:hover span {
+    outline: 1px solid #fff;
+  }
+
   label {
+    cursor: pointer;
     color: $color-default-white;
     font-size: 14px;
     line-height: 16px;
@@ -112,6 +124,7 @@
   }
 
   span {
+    cursor: pointer;
     margin-left: 0;
     display: block;
     min-width: 15px;
@@ -119,10 +132,14 @@
     border: 1px solid $color-default-white;
     border-radius: 2px;
     margin-right: 10px;
+
+    &:hover {
+      outline: 1px solid #fff;
+    }
   }
 
   input:checked + span {
-    background-image: url("../../img/sprite/checkbox.svg");
+    background-image: url("../img/sprite/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

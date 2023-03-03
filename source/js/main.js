@@ -8,6 +8,7 @@ import { addToggleDescriptionEvt } from './modules/open-more';
 import { phoneInputParent } from './modules/phone-input-valid';
 import { initPhoneInput } from './modules/form-validate/init-phone-input';
 import { addChangeTextEvt } from './modules/change-content';
+import { addCheckboxEvt } from './modules/checkbox';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initPhoneInput(phoneInputParent);
   addChangeTextEvt();
   scrollToFormAddEvent();
+  addCheckboxEvt();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
