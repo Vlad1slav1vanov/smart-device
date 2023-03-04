@@ -9,6 +9,7 @@ import { phoneInputParent } from './modules/phone-input-valid';
 import { initPhoneInput } from './modules/form-validate/init-phone-input';
 import { addChangeTextEvt } from './modules/change-content';
 import { addCheckboxEvt } from './modules/checkbox';
+import { noJsOff } from './modules/no-js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   addChangeTextEvt();
   scrollToFormAddEvent();
   addCheckboxEvt();
+  noJsOff();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
