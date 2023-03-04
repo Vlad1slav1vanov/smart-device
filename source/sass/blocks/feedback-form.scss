@@ -51,6 +51,7 @@
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
     color: $color-default-white;
     background-color: $base-black-font;
     border-radius: 3px;
@@ -104,7 +105,7 @@
 
 .feedback-form__question-wrapper {
   grid-area: 2/1/2/-1;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (max-width: 1023px) {
     margin-bottom: 0;
@@ -118,6 +119,8 @@
 .feedback-form__checkbox-wrapper {
   display: flex;
   align-items: center;
+  align-self: flex-end;
+  padding-left: 10px;
 
   &:hover span {
     outline: 1px solid #fff;

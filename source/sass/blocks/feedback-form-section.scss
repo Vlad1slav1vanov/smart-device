@@ -1,7 +1,7 @@
 .feedback-form-section {
   position: relative;
   background-color: $base-blue;
-  padding-top: 165px;
+  padding-top: 167px;
   padding-bottom: 245px;
   background-image: url("../img/bg-form.png");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 
   h2 {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 51px;
     margin-bottom: 10px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -65,11 +65,10 @@
 
 .feedback-form-section__wrapper {
   position: relative;
-  width: 62.5%;
+  width: 63.5%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 6%;
+  gap: 9.8%;
 
   @media (max-width: 1400px) {
     width: 80%;

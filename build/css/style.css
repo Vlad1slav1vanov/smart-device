@@ -680,6 +680,7 @@ button,
 
 .header__logo--full {
   display: block;
+  margin-right: 68px;
 }
 
 .header__wrapper {
@@ -778,12 +779,13 @@ button,
   line-height: 34px;
   margin-bottom: 50px;
   color: #F2F5F6;
+  width: 685px;
 }
 
 .main-description button {
   cursor: pointer;
   padding: 15px 0;
-  width: 420px;
+  width: 410px;
   background-color: #00B2FF;
   color: #F2F5F6;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -791,6 +793,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.05em;
 }
 
 .main-description button:hover {
@@ -821,7 +824,7 @@ button,
 }
 
 .benefits-block__list {
-  max-width: 63%;
+  max-width: 63.5%;
   display: -ms-grid;
   display: grid;
   margin: 0 auto;
@@ -886,16 +889,16 @@ button,
   width: 35px;
   height: 35px;
   fill: #00B2FF;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .about-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 90px;
+  gap: 98px;
   padding: 0;
-  width: 62.5%;
+  width: 63.5%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -903,7 +906,7 @@ button,
 .about-company h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 51px;
   margin-bottom: 15px;
 }
@@ -964,7 +967,7 @@ button,
 
 .products {
   background-color: #041827;
-  padding: 70px 0px 140px 0px;
+  padding: 65px 0px 140px 0px;
 }
 
 .products__list {
@@ -976,7 +979,7 @@ button,
   -ms-flex-direction: row;
   flex-direction: row;
   gap: 6.97%;
-  width: 62.5%;
+  width: 63.5%;
   margin: 0 auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -987,9 +990,9 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   font-weight: 400;
-  width: 62.5%;
+  width: 63.5%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   font-size: 36px;
   line-height: 50px;
 }
@@ -1055,14 +1058,16 @@ button,
 .product-card h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   color: #ffffff;
-  width: 100%;
+  width: 190px;
 }
 
 .feedback-form-section {
   position: relative;
   background-color: #00B2FF;
-  padding-top: 165px;
+  padding-top: 167px;
   padding-bottom: 245px;
   background-image: url("../img/bg-form.png");
   background-repeat: no-repeat;
@@ -1086,7 +1091,7 @@ button,
 }
 
 .feedback-form-section h2 {
-  font-size: 34px;
+  font-size: 32px;
   line-height: 51px;
   margin-bottom: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1104,17 +1109,14 @@ button,
 
 .feedback-form-section__wrapper {
   position: relative;
-  width: 62.5%;
+  width: 63.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 6%;
+  gap: 9.8%;
 }
 
 .feedback-form-section__form-wrapper {
@@ -1148,16 +1150,13 @@ button,
 }
 
 .footer__footer-wrapper {
-  width: 62.5%;
+  width: 63.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   gap: 0;
 }
 
@@ -1175,6 +1174,7 @@ button,
 
 .nav-section {
   margin-right: 30px;
+  padding-top: 8px;
 }
 
 .nav-section__title-wrapper {
@@ -1237,6 +1237,8 @@ button,
   font-size: 16px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
+  width: 230px;
+  display: block;
 }
 
 .nav-section__link:hover {
@@ -1271,15 +1273,19 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 10px;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  height: 130px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-width: 230px;
+  -moz-column-width: 230px;
+  column-width: 230px;
+  height: 150px;
 }
 
 .contacts-section {
   border: none;
   padding: 0;
+  padding-top: 8px;
 }
 
 .contacts-section__title-wrapper {
@@ -1364,7 +1370,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
 }
 
 .socials-wrapper {
@@ -1385,12 +1391,13 @@ button,
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-right: 12.3%;
+  margin-right: 13.1%;
 }
 
 .social-links {
-  width: 150px;
   margin: 0 auto;
+  width: 100%;
+  padding-left: 10px;
 }
 
 .social-links__list {
@@ -1632,6 +1639,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: #ffffff;
   background-color: #041827;
   border-radius: 3px;
@@ -1654,7 +1662,7 @@ button,
 .feedback-form__question-wrapper {
   -ms-grid-row: 2;
   grid-area: 2/1/2/-1;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .feedback-form__checkbox-wrapper {
@@ -1664,6 +1672,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding-left: 10px;
 }
 
 .feedback-form__checkbox-wrapper:hover span {
@@ -1787,6 +1798,8 @@ button,
     padding: 10px 15px;
     border-radius: 3px;
     margin-left: 70px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -1841,6 +1854,10 @@ button,
     padding: 0 70px 0 50px;
   }
 
+  .header__logo--full {
+    margin-right: 0;
+  }
+
   .header__wrapper {
     width: 100%;
   }
@@ -1863,6 +1880,7 @@ button,
   }
 
   .main-description p {
+    width: auto;
     margin-bottom: 60px;
   }
 
@@ -1991,12 +2009,17 @@ button,
   }
 
   .nav-section {
+    padding-top: 0;
     border: none;
     margin-right: 0;
   }
 
   .nav-section__title-wrapper {
     margin-bottom: 20px;
+  }
+
+  .contacts-section {
+    padding-top: 0;
   }
 
   .contacts-section__list {
@@ -2210,7 +2233,6 @@ button,
 
   .product-card h3 {
     font-size: 18px;
-    line-height: 30px;
   }
 
   .feedback-form-section {

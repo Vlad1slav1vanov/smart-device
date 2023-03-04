@@ -1,7 +1,9 @@
 .nav-section {
   margin-right: 30px;
+  padding-top: 8px;
 
   @media (max-width: 1023px) {
+    padding-top: 0;
     border: none;
     margin-right: 0;
   }
@@ -81,6 +83,8 @@
   font-size: 16px;
   line-height: 21px;
   color: $clipped-white;
+  width: 230px;
+  display: block;
 
   &:hover {
     color: $base-blue;
@@ -122,8 +126,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  column-gap: 30px;
-  height: 130px;
+  column-gap: 20px;
+  column-width: 230px;
+  height: 150px;
 
   @media (max-width: 1400px) {
     flex-wrap: nowrap;

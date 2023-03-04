@@ -105,8 +105,10 @@
 .product-card h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   color: $color-default-white;
-  width: 100%;
+  width: 190px;
 
   @media (max-width: 1023px) {
     font-size: 18px;
@@ -115,6 +117,5 @@
 
   @media (max-width: 767px) {
     font-size: 18px;
-    line-height: 30px;
   }
 }

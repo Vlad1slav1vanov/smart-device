@@ -28,6 +28,13 @@
 
   &--full {
     display: block;
+    margin-right: 68px;
+  }
+
+  @media (max-width: 1023px) {
+    &--full {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: 767px) {
@@ -141,5 +148,7 @@
     padding: 10px 15px;
     border-radius: 3px;
     margin-left: 70px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
   }
 }

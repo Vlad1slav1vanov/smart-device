@@ -1,6 +1,6 @@
 .products {
   background-color: $base-black-font;
-  padding: 70px 0px 140px 0px;
+  padding: 65px 0px 140px 0px;
 
   @media (max-width: 1023px) {
     padding: 55px 55px 78px 55px;
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   gap: 6.97%;
-  width: 62.5%;
+  width: 63.5%;
   margin: 0 auto;
   justify-content: space-between;
 
@@ -35,9 +35,9 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-default-white;
   font-weight: 400;
-  width: 62.5%;
+  width: 63.5%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   font-size: 36px;
   line-height: 50px;
 

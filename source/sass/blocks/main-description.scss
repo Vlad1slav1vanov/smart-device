@@ -27,12 +27,13 @@
     line-height: 34px;
     margin-bottom: 50px;
     color: $base-white-font;
+    width: 685px;
   }
 
   button {
     cursor: pointer;
     padding: 15px 0;
-    width: 420px;
+    width: 410px;
     background-color: $base-blue;
     color: $base-white-font;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -40,6 +41,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    letter-spacing: 0.05em;
   }
 
   @media (max-width: 1023px) {
@@ -55,6 +57,7 @@
     }
 
     p {
+      width: auto;
       margin-bottom: 60px;
     }
 
