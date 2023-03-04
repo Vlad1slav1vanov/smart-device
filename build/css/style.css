@@ -1458,18 +1458,18 @@ button,
 }
 
 .popup h2 {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 42px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .popup p {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   color: #ffffff;
 }
 
@@ -1490,6 +1490,7 @@ button,
 
 .popup form button {
   width: 100%;
+  letter-spacing: 0.05em;
 }
 
 .popup--is-open {
@@ -1509,6 +1510,12 @@ button,
   height: 155px;
 }
 
+.popup .feedback-form__checkbox-wrapper {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+
 .popup__wrapper {
   position: relative;
   width: 500px;
@@ -1516,6 +1523,7 @@ button,
   background-color: #00B2FF;
   border-radius: 3px;
   padding: 40px;
+  padding-top: 38px;
 }
 
 .popup__button-close {

@@ -13,18 +13,18 @@
   overflow-x: hidden;
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 42px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     color: $color-default-white;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     color: $color-default-white;
   }
 
@@ -37,6 +37,7 @@
 
     & button {
       width: 100%;
+      letter-spacing: 0.05em;
     }
   }
 
@@ -54,6 +55,11 @@
     margin-bottom: 5px;
     height: 155px;
   }
+
+  .feedback-form__checkbox-wrapper {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
 }
 
 .popup__wrapper {
@@ -63,6 +69,7 @@
   background-color: $base-blue;
   border-radius: 3px;
   padding: 40px;
+  padding-top: 38px;
 }
 
 .popup__button-close {
