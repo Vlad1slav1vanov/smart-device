@@ -28,6 +28,7 @@
     width: 180px;
     padding: 14px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
+    letter-spacing: 0.05em;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -43,6 +44,18 @@
     padding: 0 50px 80px 50px;
     width: 100%;
     margin-bottom: 0;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    & .about-company__providers-description {
+      margin-bottom: 20px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -58,6 +71,10 @@
     & p {
       font-size: 14px;
       line-height: 19px;
+      margin-bottom: 20px;
+    }
+
+    & .about-company__providers-description {
       margin-bottom: 15px;
     }
 

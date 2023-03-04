@@ -925,6 +925,7 @@ button,
   width: 180px;
   padding: 14px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1860,6 +1861,7 @@ button,
 
   .header__wrapper {
     width: 100%;
+    padding-bottom: 5px;
   }
 
   .header__contacts-block {
@@ -1868,7 +1870,7 @@ button,
 
   .main-description {
     padding: 180px 50px 205px 50px;
-    background-position: -173px;
+    background-position: -125px;
     height: auto;
   }
 
@@ -1895,6 +1897,7 @@ button,
 
   .benefits-block {
     padding: 80px 50px;
+    padding-bottom: 78px;
   }
 
   .benefits-block__list {
@@ -1910,6 +1913,14 @@ button,
     max-height: 360px;
   }
 
+  .benefit-item h2 {
+    margin-bottom: 10px;
+  }
+
+  .benefit-item__icon {
+    margin-bottom: 9px;
+  }
+
   .about-company {
     gap: 25px;
     padding: 0 50px 80px 50px;
@@ -1917,8 +1928,20 @@ button,
     margin-bottom: 0;
   }
 
+  .about-company h2 {
+    margin-bottom: 10px;
+  }
+
+  .about-company p {
+    margin-bottom: 25px;
+  }
+
+  .about-company .about-company__providers-description {
+    margin-bottom: 20px;
+  }
+
   .products {
-    padding: 55px 55px 78px 55px;
+    padding: 55px 50px 75px 50px;
   }
 
   .products__list {
@@ -1952,17 +1975,17 @@ button,
   }
 
   .product-card__link {
-    padding: 45px 395px 155px 45px;
+    padding: 36px 395px 155px 45px;
     height: 100%;
   }
 
   .product-card h3 {
     font-size: 18px;
-    width: 165px;
+    width: 147px;
   }
 
   .feedback-form-section {
-    padding: 50px 50px 125px 50px;
+    padding: 45px 50px 125px 50px;
     background-image: none;
   }
 
@@ -1988,7 +2011,7 @@ button,
   }
 
   .footer {
-    padding: 60px 50px 65px 50px;
+    padding: 50px 45px 65px 50px;
   }
 
   .footer__logo-link {
@@ -2046,6 +2069,11 @@ button,
     margin-bottom: 35px;
   }
 
+  .social-links {
+    width: auto;
+    padding: 5px 0 0 10px;
+  }
+
   .feedback-form {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -2060,6 +2088,14 @@ button,
 
   .feedback-form__question-wrapper {
     margin-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .feedback-form__checkbox-wrapper {
+    padding: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 }
 
@@ -2105,13 +2141,14 @@ button,
     font-size: 36px;
     line-height: 42px;
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .main-description p {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .main-description button {
@@ -2141,7 +2178,7 @@ button,
   }
 
   .benefit-item {
-    padding: 30px 30px 65px 30px;
+    padding: 25px 30px 70px 30px;
     min-height: 325px;
   }
 
@@ -2159,7 +2196,7 @@ button,
   .benefit-item__icon {
     width: 30px;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .about-company {
@@ -2176,6 +2213,10 @@ button,
   .about-company p {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .about-company .about-company__providers-description {
     margin-bottom: 15px;
   }
 
@@ -2216,7 +2257,7 @@ button,
   }
 
   .product-card__link {
-    padding: 30px 90px 160px 30px;
+    padding: 28px 90px 162px 30px;
   }
 
   .product-card__button {
@@ -2350,6 +2391,10 @@ button,
     align-items: center;
     margin: 0;
     padding: 35px 50px 0 50px;
+  }
+
+  .social-links {
+    padding: 0;
   }
 
   .feedback-form {

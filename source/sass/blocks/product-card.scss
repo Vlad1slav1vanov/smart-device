@@ -59,12 +59,12 @@
   height: 650px;
 
   @media (max-width: 1023px) {
-    padding: 45px 395px 155px 45px;
+    padding: 36px 395px 155px 45px;
     height: 100%;
   }
 
   @media (max-width: 767px) {
-    padding: 30px 90px 160px 30px;
+    padding: 28px 90px 162px 30px;
   }
 
   &:focus {
@@ -112,7 +112,7 @@
 
   @media (max-width: 1023px) {
     font-size: 18px;
-    width: 165px;
+    width: 147px;
   }
 
   @media (max-width: 767px) {

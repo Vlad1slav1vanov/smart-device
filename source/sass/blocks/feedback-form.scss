@@ -109,6 +109,7 @@
 
   @media (max-width: 1023px) {
     margin-bottom: 0;
+    margin-bottom: 5px;
   }
 
   @media (max-width: 767px) {
@@ -157,6 +158,11 @@
 
   input:focus + span {
     outline: 2px solid #fff;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0;
+    align-self: center;
   }
 
   @media (max-width: 767px) {

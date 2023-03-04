@@ -3,8 +3,17 @@
   width: 100%;
   padding-left: 10px;
 
+  @media (max-width: 1023px) {
+    width: auto;
+    padding: 5px 0 0 10px;
+  }
+
   @media (min-width: 768px) {
     margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }
 
