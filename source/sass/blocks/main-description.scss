@@ -67,8 +67,8 @@
   }
 
   @media (max-width: 767px) {
-    background-position: -254px;
-    padding: 150px 25px 195px 25px;
+    background-position: -230px;
+    padding: 150px 25px 190px 25px;
 
     h1 {
       font-size: 36px;
@@ -80,12 +80,11 @@
     p {
       font-size: 14px;
       line-height: 22px;
-      margin-bottom: 40px;
       margin-bottom: 45px;
     }
 
     button {
-      padding: 10px 0;
+      padding: 12px 0;
       width: 270px;
       border-radius: 3px;
       margin-left: 0;
@@ -94,7 +93,6 @@
     }
   }
 }
-
 
 .main-description button:hover {
   background-color: $base-black-font;

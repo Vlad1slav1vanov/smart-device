@@ -108,14 +108,15 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-default-white;
-  width: 190px;
+  width: 170px;
 
   @media (max-width: 1023px) {
-    font-size: 18px;
-    width: 147px;
+    font-size: 20px;
+    width: 150px;
   }
 
   @media (max-width: 767px) {
     font-size: 18px;
+    width: 135px;
   }
 }

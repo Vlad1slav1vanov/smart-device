@@ -389,8 +389,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed.woff") format("woff");
-  src: url("../fonts/roboto-condensed.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed.woff2") format("woff2"), url("../fonts/roboto-condensed.woff") format("woff");
 }
 
 @font-face {
@@ -398,8 +397,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-700.woff") format("woff");
-  src: url("../fonts/roboto-condensed-700.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
 }
 
 @font-face {
@@ -407,8 +405,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../fonts/pt-mono.woff") format("woff");
-  src: url("../fonts/pt-mono.woff2") format("woff2");
+  src: url("../fonts/pt-mono.woff2") format("woff2"), url("../fonts/pt-mono.woff") format("woff");
 }
 
 @font-face {
@@ -416,8 +413,7 @@ template {
   font-weight: 400;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/roboto.woff") format("woff");
-  src: url("../fonts/roboto.woff2") format("woff2");
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
 }
 
 *,
@@ -842,7 +838,7 @@ button,
   min-width: 332px;
   min-height: 300px;
   height: 100%;
-  padding: 40px 45px 35px 45px;
+  padding: 40px 35px 35px 45px;
   border: 1px solid #EBEBEB;
 }
 
@@ -850,7 +846,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   width: 100%;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 34px;
   color: #00B2FF;
   margin-bottom: 15px;
@@ -906,7 +902,7 @@ button,
 .about-company h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 51px;
   margin-bottom: 15px;
 }
@@ -1062,7 +1058,7 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  width: 190px;
+  width: 170px;
 }
 
 .feedback-form-section {
@@ -1072,7 +1068,7 @@ button,
   padding-bottom: 245px;
   background-image: url("../img/bg-form.png");
   background-repeat: no-repeat;
-  background-size: 50% 100%;
+  background-size: 51.1% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,19 +1088,18 @@ button,
 }
 
 .feedback-form-section h2 {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 51px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .feedback-form-section p {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   color: #ffffff;
 }
 
@@ -1126,6 +1121,9 @@ button,
 
 .feedback-form-section__image {
   display: block;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .footer {
@@ -1202,6 +1200,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
@@ -1353,6 +1352,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
@@ -1994,8 +1994,8 @@ button,
   }
 
   .product-card h3 {
-    font-size: 18px;
-    width: 147px;
+    font-size: 20px;
+    width: 150px;
   }
 
   .feedback-form-section {
@@ -2116,7 +2116,7 @@ button,
 @media (max-width: 768px) {
   .benefits-block {
     padding: 50px 25px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 
   .contacts-section__button-plus {
@@ -2147,8 +2147,8 @@ button,
   }
 
   .main-description {
-    background-position: -254px;
-    padding: 150px 25px 195px 25px;
+    background-position: -230px;
+    padding: 150px 25px 190px 25px;
   }
 
   .main-description h1 {
@@ -2161,12 +2161,11 @@ button,
   .main-description p {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 40px;
     margin-bottom: 45px;
   }
 
   .main-description button {
-    padding: 10px 0;
+    padding: 12px 0;
     width: 270px;
     border-radius: 3px;
     margin-left: 0;
@@ -2192,7 +2191,11 @@ button,
   }
 
   .benefit-item {
-    padding: 25px 30px 70px 30px;
+    padding: 30px 30px 35px 30px;
+    min-height: 340px;
+  }
+
+  .benefit-item:nth-child(n+3) {
     min-height: 325px;
   }
 
@@ -2248,12 +2251,12 @@ button,
   }
 
   .products {
-    padding: 50px 25px 86px 25px;
+    padding: 47px 25px 88px 25px;
   }
 
   .products h2 {
     margin-bottom: 25px;
-    width: auto;
+    width: 260px;
     font-size: 28px;
     line-height: 40px;
   }
@@ -2288,6 +2291,7 @@ button,
 
   .product-card h3 {
     font-size: 18px;
+    width: 135px;
   }
 
   .feedback-form-section {
@@ -2295,7 +2299,7 @@ button,
   }
 
   .feedback-form-section h2 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 42px;
     margin-bottom: 10px;
   }
