@@ -89,12 +89,16 @@
   }
 }
 
+.nav-section__item {
+  width: 230px;
+}
+
 .nav-section__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: $clipped-white;
-  width: 230px;
+  width: fit-content;
   display: block;
 
   &:hover {
