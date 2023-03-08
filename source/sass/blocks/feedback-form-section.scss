@@ -67,7 +67,8 @@
   width: 63.5%;
   display: flex;
   align-items: center;
-  gap: 9.8%;
+  gap: 9%;
+  justify-content: center;
 
   @media (max-width: 1400px) {
     width: 80%;
