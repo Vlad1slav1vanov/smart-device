@@ -9,6 +9,7 @@ import { addChangeTextEvt } from './modules/change-content';
 import { addCheckboxEvt } from './modules/checkbox';
 import { noJsOff } from './modules/no-js';
 import { addPhoneValids } from './modules/phone-input-valid';
+import { focusEvt } from './modules/form-focus';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   addCheckboxEvt();
   addPhoneValids();
   noJsOff();
+  focusEvt();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
