@@ -652,7 +652,10 @@ button,
 
 .header {
   position: fixed;
-  height: 120px;
+  min-height: 120px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   top: 0;
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
@@ -693,6 +696,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .header__contacts-block {
@@ -747,7 +751,6 @@ button,
 
 .main-description {
   width: 100%;
-  height: 880px;
   background-color: #000;
   background-image: url("../img/main-block-background.jpg");
   background-repeat: no-repeat;
@@ -975,12 +978,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 6.97%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 63.5%;
   margin: 0 auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  row-gap: 30px;
 }
 
 .products h2 {
@@ -995,7 +1000,7 @@ button,
 }
 
 .product-card {
-  width: 100%;
+  width: 350px;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1394,6 +1399,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1434,6 +1441,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 15px;
   width: 150px;
   margin-bottom: 25px;
@@ -1992,6 +2001,10 @@ button,
     margin: 0;
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  .product-card {
+    width: 100%;
   }
 
   .product-card--1 {

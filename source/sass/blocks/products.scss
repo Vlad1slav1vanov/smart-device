@@ -14,10 +14,11 @@
 .products__list {
   display: flex;
   flex-direction: row;
-  gap: 6.97%;
+  flex-wrap: wrap;
   width: 63.5%;
   margin: 0 auto;
   justify-content: space-between;
+  row-gap: 30px;
 
   @media (max-width: 1400px) {
     width: 80%;
