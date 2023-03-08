@@ -3,11 +3,9 @@ import { Validator } from "./form-validate/validator";
 
 const validator = new Validator();
 
-const pageButtonSubmit = document.getElementById("submit-form");
 const pagePhoneParent = document.getElementById("feedback-form-phone-parent");
 const pagePhoneInput = document.getElementById("phone-input");
 
-const popupButtonSubmit = document.getElementById("submit-popup");
 const popupPhoneParent = document.getElementById("parent-phone-input-popup");
 const popupPhoneInput = document.getElementById("popup-phone-input");
 
@@ -18,12 +16,20 @@ const addPhoneValids = () => {
   initPhoneInput(pagePhoneParent);
   initPhoneInput(popupPhoneParent);
 
-  pageButtonSubmit.addEventListener("click", () => {
-    validator._validatePhoneInput(pagePhoneParent, pagePhoneInput);
+  popupForm.addEventListener("submit", (evt) => {
+    const isValid = validator._validatePhoneInput(popupPhoneParent, popupPhoneInput);
+    if (!isValid) {
+      evt.preventDefault();
+      popupPhoneInput.focus();
+    }
   });
 
-  popupButtonSubmit.addEventListener("click", () => {
-    validator._validatePhoneInput(popupPhoneParent, popupPhoneInput);
+  pageForm.addEventListener("submit", (evt) => {
+    const isValid = validator._validatePhoneInput(pagePhoneParent, pagePhoneInput);
+    if (!isValid) {
+      evt.preventDefault();
+      pagePhoneInput.focus();
+    }
   });
 }
 

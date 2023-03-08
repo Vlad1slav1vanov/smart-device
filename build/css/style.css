@@ -1574,8 +1574,8 @@ button,
 .feedback-form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   row-gap: 20px;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -1664,7 +1664,8 @@ button,
   color: #ffffff;
   background-color: #041827;
   border-radius: 3px;
-  width: 265px;
+  width: 100%;
+  max-width: 265px;
   padding: 13px 25px;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -1695,6 +1696,9 @@ button,
   align-items: center;
   -ms-flex-item-align: end;
   align-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-left: 10px;
 }
 
