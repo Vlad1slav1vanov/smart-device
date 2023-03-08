@@ -195,20 +195,20 @@
               <p>
                 Мы проконсультируем Вас бесплатно
               </p>
-              <form class="feedback-form-section__feedback-form feedback-form" method="post" action="#">
+              <form class="feedback-form-section__feedback-form feedback-form" id="feedback-form-page" method="post" action="#">
                 <div class="feedback-form__name-wrapper">
                   <label class="visually-hidden" for="name-input" >Имя</label>
                   <input id="name-input" type="text" placeholder="Имя" required>
                 </div>
-                <div class="feedback-form__phone-wrapper" data-validate-type="phone">
+                <div class="feedback-form__phone-wrapper" data-validate-type="phone" id="feedback-form-phone-parent">
                   <label class="visually-hidden" for="phone-input">Телефон</label>
-                  <input id="phone-input" name="phone" type="tel" placeholder="Телефон" required>
+                  <input id="phone-input" name="phone" type="tel" placeholder="Телефон" minlength="20" size="20" required>
                 </div>
                 <div class="feedback-form__question-wrapper">
                   <label class="visually-hidden" for="question-textarea">Ваш вопрос</label>
                   <textarea id="question-textarea" placeholder="Ваш вопрос"></textarea>
                 </div>
-                <button type="submit">
+                <button type="submit" id="submit-form">
                   Задать вопрос
                 </button>
                 <div class="feedback-form__checkbox-wrapper">
@@ -360,20 +360,20 @@
             <p>
               Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
             </p>
-            <form class="popup__feedback-form feedback-form" method="post" action="#">
+            <form class="popup__feedback-form feedback-form" id="feedback-form-popup" method="post" action="#">
               <div class="feedback-form__name-wrapper">
                 <label class="visually-hidden" for="popup-name-input" >Имя</label>
                 <input id="popup-name-input" type="text" placeholder="Имя" required>
               </div>
-              <div class="feedback-form__phone-wrapper" data-validate-type="phone">
+              <div class="feedback-form__phone-wrapper" data-validate-type="phone" id="parent-phone-input-popup" >
                 <label class="visually-hidden" for="popup-phone-input">Телефон</label>
-                <input id="popup-phone-input" name="phone" type="tel" placeholder="Телефон" required>
+                <input id="popup-phone-input" name="phone" type="tel" placeholder="Телефон" data-phone-length="10" minlength="10" required>
               </div>
               <div class="feedback-form__question-wrapper">
                 <label class="visually-hidden" for="popup-question-textarea">Ваш вопрос</label>
                 <textarea id="popup-question-textarea" placeholder="Ваш вопрос"></textarea>
               </div>
-              <button type="submit">
+              <button type="submit" id="submit-popup">
                 Отправить
               </button>
               <div class="feedback-form__checkbox-wrapper">

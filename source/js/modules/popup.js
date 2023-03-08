@@ -4,30 +4,30 @@ const popup = document.querySelector(".popup");
 const popupWrapper = document.querySelector(".popup__wrapper");
 
 const body = document.querySelector('body');
-const elementsToHide = body.querySelectorAll(':not(.popup__wrapper)');
+const main = document.querySelector('.main');
+const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
 const focusedElementBeforePopup = document.activeElement;
 const firstElement = document.getElementById("popup-name-input");
 
 const hideAll = () => {
-  elementsToHide.forEach((element) => {
-    element.setAttribute('aria-hidden', 'true');
-    });
-
+  main.setAttribute("inert", "true");
+  header.setAttribute("inert", "true");
+  footer.setAttribute("inert", "true");
   firstElement.focus();
 }
 
 const closePopup = () => {
   popup.classList.remove("popup--is-open");
+  main.removeAttribute("inert");
+  header.removeAttribute("inert");
+  footer.removeAttribute("inert");
 
   document.removeEventListener("keydown", (evt) => {
     if (evt.key === "Escape") {
       closePopup();
     }
   })
-
-  elementsToHide.forEach(function(element) {
-    element.removeAttribute('aria-hidden');
-  });
 
   if (focusedElementBeforePopup) {
     focusedElementBeforePopup.focus();
@@ -42,6 +42,8 @@ const openPopup = () => {
       closePopup();
     }
   })
+
+  body.style.height = "100vh"
 
   if (window.innerHeight < popupWrapper.offsetHeight) {
     popupWrapper.style.position = "absolute";

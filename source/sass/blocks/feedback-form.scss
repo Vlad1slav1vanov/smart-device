@@ -91,7 +91,7 @@
 .feedback-form button:hover {
   background-color: $color-default-white;
   color: $base-black-font;
-  border: 1px solid $base-black-font;
+  outline: 1px solid $base-black-font;
 }
 
 .feedback-form__name-wrapper,

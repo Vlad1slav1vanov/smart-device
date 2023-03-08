@@ -1677,7 +1677,7 @@ button,
 .feedback-form button:hover {
   background-color: #ffffff;
   color: #041827;
-  border: 1px solid #041827;
+  outline: 1px solid #041827;
 }
 
 .feedback-form__question-wrapper {

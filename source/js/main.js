@@ -5,11 +5,10 @@ import {accordionsToggle} from './modules/accordion.js';
 import { popupEvent } from './modules/popup';
 import { scrollToFormAddEvent } from './modules/form-scroll';
 import { addToggleDescriptionEvt } from './modules/open-more';
-import { phoneInputParent } from './modules/phone-input-valid';
-import { initPhoneInput } from './modules/form-validate/init-phone-input';
 import { addChangeTextEvt } from './modules/change-content';
 import { addCheckboxEvt } from './modules/checkbox';
 import { noJsOff } from './modules/no-js';
+import { addPhoneValids } from './modules/phone-input-valid';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,10 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
   accordionsToggle();
   popupEvent();
   addToggleDescriptionEvt();
-  initPhoneInput(phoneInputParent);
   addChangeTextEvt();
   scrollToFormAddEvent();
   addCheckboxEvt();
+  addPhoneValids();
   noJsOff();
 
 
