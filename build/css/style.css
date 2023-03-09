@@ -1854,6 +1854,12 @@ button,
   }
 }
 
+@media (max-width: 1600px) {
+  .header__wrapper {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -1862,7 +1868,7 @@ button,
 
 @media (max-width: 1400px) {
   .header__wrapper {
-    width: 80%;
+    width: 96%;
     margin: 0 auto;
     padding: 0;
   }
