@@ -80,21 +80,23 @@
 
 .header__contacts-block {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
-
-  @media (min-width: $vp-1024) {
-    gap: 50px;
-    width: 480px;
-    justify-content: space-between;
-  }
+  gap: 50px;
+  row-gap: 0;
+  width: 480px;
+  justify-content: space-between;
 
   @media (max-width: 1023px) {
     margin-bottom: 15px;
+    width: auto;
+    gap: 20px;
+    padding-right: 10px;
   }
 
   @media (max-width: 767px) {
     margin-bottom: 0;
+    padding-right: 0;
   }
 }
 
