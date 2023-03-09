@@ -9,6 +9,7 @@ const popupName = document.getElementById("popup-name-input");
 const popupPhone = document.getElementById("popup-phone-input");
 const popupCheckbox = document.getElementById("popup-access-checkbox");
 const popupSubmitButton = document.getElementById("submit-popup");
+const closePopup = document.getElementById("close-popup");
 
 const focusEvt = () => {
   question.addEventListener("focus", () => {

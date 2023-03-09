@@ -985,7 +985,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  row-gap: 30px;
+  gap: 85px;
 }
 
 .products h2 {
@@ -1000,7 +1000,7 @@ button,
 }
 
 .product-card {
-  width: 350px;
+  width: calc((100% - 170px) / 3);
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
