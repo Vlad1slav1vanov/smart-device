@@ -82,6 +82,7 @@
 
 .feedback-form-section__form-wrapper {
   width: 580px;
+  min-width: 580px;
 
   @media (max-width: 1023px) {
     width: 100%;
