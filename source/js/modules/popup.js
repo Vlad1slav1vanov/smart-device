@@ -10,11 +10,44 @@ const footer = document.querySelector('.footer');
 const focusedElementBeforePopup = document.activeElement;
 const firstElement = document.getElementById("popup-name-input");
 
+const popupQuestion = document.getElementById("popup-question-textarea");
+const popupName = document.getElementById("popup-name-input");
+const popupPhone = document.getElementById("popup-phone-input");
+const popupCheckbox = document.getElementById("popup-access-checkbox");
+const popupSubmitButton = document.getElementById("submit-popup");
+
 const hideAll = () => {
   main.setAttribute("inert", "true");
   header.setAttribute("inert", "true");
   footer.setAttribute("inert", "true");
   firstElement.focus();
+}
+
+const focusTrap = () => {
+  const focusableEls = popupWrapper.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+  const firstFocusableEl = focusableEls[0];  
+  const lastFocusableEl = focusableEls[focusableEls.length - 1];
+  const KEYCODE_TAB = 9;
+  
+  popupWrapper.addEventListener('keydown', (e) => {
+    const isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+    if (!isTabPressed) { 
+      return; 
+    }
+
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else /* tab */ {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+  });
 }
 
 const closePopup = () => {
@@ -42,6 +75,8 @@ const openPopup = () => {
       closePopup();
     }
   })
+
+  focusTrap();
 
   body.style.height = "100vh"
 

@@ -4,13 +4,6 @@ const phone = document.getElementById("phone-input");
 const checkbox = document.getElementById("access-checkbox");
 const submitButton = document.getElementById("submit-form");
 
-const popupQuestion = document.getElementById("popup-question-textarea");
-const popupName = document.getElementById("popup-name-input");
-const popupPhone = document.getElementById("popup-phone-input");
-const popupCheckbox = document.getElementById("popup-access-checkbox");
-const popupSubmitButton = document.getElementById("submit-popup");
-const closePopup = document.getElementById("close-popup");
-
 const focusEvt = () => {
   question.addEventListener("focus", () => {
     name.tabIndex = 1;
@@ -28,21 +21,7 @@ const focusEvt = () => {
     submitButton.tabIndex = 0;
   })
 
-  popupQuestion.addEventListener("focus", () => {
-    popupName.tabIndex = 1;
-    popupPhone.tabIndex = 2;
-    popupQuestion.tabIndex = 3;
-    popupCheckbox.tabIndex = 4;
-    popupSubmitButton.tabIndex = 5;
-  })
 
-  popupSubmitButton.addEventListener("focus", () => {
-    popupName.tabIndex = 0;
-    popupPhone.tabIndex = 0;
-    popupQuestion.tabIndex = 0;
-    popupCheckbox.tabIndex = -1;
-    popupSubmitButton.tabIndex = 0;
-  })
 }
 
 export {focusEvt};

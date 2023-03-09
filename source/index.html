@@ -373,15 +373,17 @@
                 <label class="visually-hidden" for="popup-question-textarea">Ваш вопрос</label>
                 <textarea id="popup-question-textarea" placeholder="Ваш вопрос"></textarea>
               </div>
-              <button type="submit" id="submit-popup">
-                Отправить
-              </button>
-              <div class="feedback-form__checkbox-wrapper">
-                <input class="visually-hidden" id="popup-access-checkbox" name="access" value="true" type="checkbox" checked>
-                <span id="popup-checkbox"></span>
-                <label for="popup-access-checkbox">
-                  Я согласен на обработку  персональных данных
-                </label>
+              <div class="popup__submit-wrapper">
+                <div class="feedback-form__checkbox-wrapper">
+                  <input class="visually-hidden" id="popup-access-checkbox" name="access" value="true" type="checkbox" checked>
+                  <span id="popup-checkbox"></span>
+                  <label for="popup-access-checkbox">
+                    Я согласен на обработку  персональных данных
+                  </label>
+                </div>
+                <button type="submit" id="submit-popup">
+                  Отправить
+                </button>
               </div>
             </form>
           </div>

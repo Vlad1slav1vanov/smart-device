@@ -1,11 +1,10 @@
 const navItems = document.querySelectorAll('.nav-section__item');
 const navList = document.querySelector('.nav-section__list');
+const desktopScreen = window.matchMedia("(min-width: 1024px)");
 
 const navItemsCheck = () => {
-  if (navItems.length > 8) {
-    console.log(navItems.length)
+  if (navItems.length > 8 && desktopScreen.matches) {
     navList.style.height = `${(navItems.length * 35) / 2}px`
-    console.log(navList.style.height)
   }
 }
 

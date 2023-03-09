@@ -73,6 +73,14 @@
   padding-top: 38px;
 }
 
+.popup__submit-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 .popup__button-close {
   position: absolute;
   width: 40px;
@@ -85,6 +93,11 @@
   background-position: center;
 
   &:hover {
+    outline: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  &:focus {
     outline: 1px solid #fff;
     border-radius: 50%;
   }
