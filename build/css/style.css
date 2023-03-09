@@ -1863,6 +1863,7 @@ button,
   .header__wrapper {
     width: 80%;
     margin: 0 auto;
+    padding: 0;
   }
 
   .main-description__wrapper {
@@ -1893,7 +1894,7 @@ button,
 
   .header {
     position: absolute;
-    height: 100px;
+    min-height: 100px;
     padding: 0 70px 0 50px;
   }
 
@@ -1903,6 +1904,7 @@ button,
 
   .header__wrapper {
     width: 100%;
+    padding: 0;
     padding-bottom: 5px;
   }
 
@@ -2162,7 +2164,7 @@ button,
   }
 
   .header {
-    height: 70px;
+    min-height: 70px;
     padding: 0 35px 0 26px;
   }
 
