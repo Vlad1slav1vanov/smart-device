@@ -690,13 +690,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px 0;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 .header__contacts-block {
@@ -708,6 +709,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 4px;
   gap: 50px;
   row-gap: 0;
   width: 480px;
@@ -1861,6 +1863,7 @@ button,
     margin-left: 70px;
     margin-bottom: 10px;
     letter-spacing: 0.05em;
+    margin-top: 5px;
   }
 }
 
