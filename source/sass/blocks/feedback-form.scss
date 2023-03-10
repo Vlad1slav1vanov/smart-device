@@ -82,7 +82,9 @@
     button {
       font-size: 16px;
       line-height: 19px;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
+      padding-top: 15px;
+      padding-bottom: 11px;
       width: 270px;
       align-self: center;
     }
@@ -114,7 +116,7 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 }
 

@@ -2084,6 +2084,7 @@ button,
 
   .feedback-form-section__form-wrapper {
     width: 100%;
+    min-width: auto;
   }
 
   .feedback-form-section__image {
@@ -2532,7 +2533,9 @@ button,
   .feedback-form button {
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    padding-top: 15px;
+    padding-bottom: 11px;
     width: 270px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -2540,7 +2543,7 @@ button,
   }
 
   .feedback-form__question-wrapper {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 
   .feedback-form__checkbox-wrapper span {
