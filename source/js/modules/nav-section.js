@@ -4,7 +4,7 @@ const desktopScreen = window.matchMedia("(min-width: 1024px)");
 
 const navItemsCheck = () => {
   if (navItems.length > 8 && desktopScreen.matches) {
-    navList.style.height = `${(navItems.length * 35) / 2}px`
+    navList.style.height = `${(navItems.length * 52) / 2}px`
   }
 }
 
