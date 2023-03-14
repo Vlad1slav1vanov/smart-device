@@ -1287,7 +1287,11 @@ button,
 }
 
 .nav-section__navigation {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+  gap: 20px;
   padding-top: 0;
 }
 
@@ -1297,8 +1301,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1310,13 +1312,6 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 10px;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  -webkit-column-width: 230px;
-  -moz-column-width: 230px;
-  column-width: 230px;
-  height: 150px;
 }
 
 .contacts-section {
@@ -1336,7 +1331,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .contacts-section__button-plus {
@@ -1386,6 +1381,7 @@ button,
 }
 
 .contacts-section__link {
+  display: block;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
@@ -1414,7 +1410,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 5px;
+  gap: 10px;
 }
 
 .socials-wrapper {
@@ -1868,6 +1864,15 @@ button,
 }
 
 @media (max-width: 1650px) {
+  .nav-section__navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+    width: auto;
+  }
+
   .nav-section__list {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2122,12 +2127,16 @@ button,
     margin-bottom: 20px;
   }
 
+  .nav-section__navigation {
+    gap: 10px;
+  }
+
   .contacts-section {
     padding-top: 0;
   }
 
   .contacts-section__list {
-    gap: 5px;
+    gap: 10px;
   }
 
   .socials-wrapper {
@@ -2147,7 +2156,7 @@ button,
     flex-direction: row;
     margin-right: 0;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .social-links {
@@ -2454,7 +2463,7 @@ button,
   }
 
   .contacts-section__title-wrapper {
-    padding: 20px 25px;
+    padding: 22px 25px 15px 25px;
     margin-bottom: 0;
   }
 
@@ -2478,8 +2487,8 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 25px 20px 25px;
-    gap: 10px;
+    padding: 0 28px 15px 25px;
+    gap: 6px;
   }
 
   .contacts-section__list--is-open {
@@ -2493,8 +2502,8 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 25px 20px 25px;
-    gap: 10px;
+    padding: 0 25px 15px 25px;
+    gap: 6px;
   }
 
   .socials-wrapper {
